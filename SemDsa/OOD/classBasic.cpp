@@ -70,6 +70,7 @@ void clockTypes::printTime()
 int main()
 {
     clockTypes habib(2,20,12);
+    cout<<"Helo\n";
     habib.printTime();
 
     return 0;

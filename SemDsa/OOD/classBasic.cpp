@@ -17,6 +17,36 @@ class  clockTypes
         string getTime();
         clockTypes(int sec,int min,int hours);
 };
+clockTypes::clockTypes(int sec,int min,int hour)
+{
+    setTime(sec,min,hour);
+}
+void clockTypes::incrementHour()
+{
+    this->hours++;
+    if(hours>23)
+    {
+        this->hours=0;
+    }
+}
+void clockTypes::incrementMin()
+{
+    this->min++;
+    if(hours>59)
+    {
+        min=0;
+        incrementHour();
+    }
+}
+void clockTypes::incrementSec()
+{
+    this->sec++;
+    if(sec>60)
+    {
+        sec=0;
+        incrementMin();
+    }
+}
 void clockTypes::setTime(int sec,int min,int hours)
 {
     if((0<=sec &&sec<60))
@@ -43,9 +73,13 @@ void clockTypes::setTime(int sec,int min,int hours)
         this->hours=0;
     }
 }
-clockTypes::clockTypes(int sec,int min,int hour)
+bool clockTypes::equalTime(clockTypes &otherClotck)
 {
-    setTime(sec,min,hour);
+    if(hours==otherClotck.hours &&min==otherClotck.min && sec==otherClotck.sec)
+    {
+        return true;
+    }
+    return false;
 }
 void clockTypes::printTime()
 {
@@ -65,8 +99,6 @@ void clockTypes::printTime()
     }
     cout<<sec<<endl;
 }
-
-
 int main()
 {
     clockTypes habib(2,20,12);

@@ -1,13 +1,7 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
-class  a
-{
-
-};
-
 int main()
 {
-
-
+    cout<<"Hello " <<endl;
     return 0;
 }

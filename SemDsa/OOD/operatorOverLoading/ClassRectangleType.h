@@ -10,7 +10,11 @@ private:
     friend void CreatRandDataObj();
 
 public:
-    rectangleType(double len = 0, double wid = 0);
+    rectangleType()
+    {
+
+    }
+    rectangleType(double len , double wid );
     void setDimention(double len, double width);
     double calculateArea();
     void printDimention();
@@ -25,7 +29,7 @@ public:
     bool operator>=(const rectangleType &rec);
     bool operator<=(const rectangleType &rec);
     friend ostream &operator<<(ostream &osObject, rectangleType &rec);
-    friend iostream &operator>>(iostream &osObject, rectangleType &rec);
+    friend istream &operator>>(istream &osObject, rectangleType &rec);
 };
 rectangleType rectangleType::operator+(const rectangleType &rec)
 {
@@ -102,16 +106,10 @@ ostream &operator<<(ostream &osObject, rectangleType &rec)
     osObject<<"Width  : "<<rec.width<<endl;
     return osObject;
 }
-iostream &operator>>(iostream &isObject, rectangleType &rec)
+istream &operator>>(istream &isObject, rectangleType &rec)
 {
     isObject>>rec.length>>rec.width;
-}
-rectangleType rectangleType::operator+(const rectangleType &oper)
-{
-    rectangleType temp;
-    temp.length = length + oper.length;
-    temp.width = width + oper.width;
-    return temp;
+    return isObject;
 }
 void rectangleType::setDimention(double len, double width)
 {
@@ -127,7 +125,7 @@ void rectangleType::printDimention()
     cout << "Length : " << this->length << endl;
     cout << "Width  : " << this->width << endl;
 }
-rectangleType::rectangleType(double l = 0, double w = 0)
+rectangleType::rectangleType(double l , double w )
 {
     this->length = l;
     this->width = w;

@@ -6,18 +6,32 @@ class line
     double b;
     double x;
     double y;
+    double c;
     char lineType;
     double slope;
+
 public:
     line(double a, double b, double x, double y);
     double Findslope();
-    bool isEqualLines();
-    bool isParrallel();
     double pointIntersection();
-    bool operator=(line &ln);
-    friend bool isParrallel(line &ln1, line &ln2);
-    friend bool perpendicular(line &ln1, line &ln2);
+    bool operator==(line &ln);
+    static bool isParrallel(line &ln1, line &ln2);
+    static bool isPerpendicular(line &ln1, line &ln2);
 };
+bool line::isParrallel(line &ln1, line &ln2)
+{
+    if (ln1.lineType == 'V' && ln2.lineType == 'V')
+        return true;
+    return false;
+}
+bool line::isPerpendicular(line &ln1,line &ln2)
+{
+    if((ln1.lineType=='V'||ln2.lineType=='H')||(ln1.lineType=='H'||ln2.lineType=='V'))
+    {
+        return true;
+    }
+    return false;
+}
 line::line(double a, double b, double x, double y)
 {
     if (x == 0 && y == 0)
@@ -35,6 +49,7 @@ line::line(double a, double b, double x, double y)
         this->y = y;
         this->a = a;
         this->b = b;
+        this->c = (a * x) + (b * y);
         if (b == 0)
         {
             lineType = 'V';

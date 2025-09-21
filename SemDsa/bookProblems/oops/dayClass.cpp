@@ -78,7 +78,9 @@ string dayType::findDay(int noOfDays)
 
     }
     // the next days are current +nofdays
-    int findingDay=currentIndex
+    int findingDay=currentIndex+noOfDays;
+    int remind=findingDay%7;
+    return dayArray[remind];
 }
 
 void dayType::setDay(string day)
@@ -93,9 +95,10 @@ void dayType::printDay()
 int main()
 {
     dayType  currentDay ("Sunday");
-    cout<<"Prev day  : "<<currentDay.returnPrevDay()<<endl;
-    cout<<"Next Day : "<<currentDay.returnNextDay()<<endl;
-    cout << "Hello World\n";
+    // cout<<"Prev day  : "<<currentDay.returnPrevDay()<<endl;
+    // cout<<"Next Day : "<<currentDay.returnNextDay()<<endl;
+    // cout << "Hello World\n";
+    cout<<"NExt Days : "<<currentDay.findDay(100);
 
     return 0;
 }

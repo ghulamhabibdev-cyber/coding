@@ -28,10 +28,10 @@ public:
     int listSize();
     int getMaxSize();
     void print();
-    bool isItemAtEqual(int item, const elemType &item);
-    void inserAt(int loc, const elemType&item);
+    bool isItemAtEqual(int loc, const elemType &item);
+    void insertAt(int loc, const elemType&item);
     void insertEnd(const elemType &item);
-    void removeAt(int loc,const elemType&item);
+    void removeAt(int loc);
     void retreiveAt(int , elemType& item);
     void replaceAt(int ,const elemType &item);
     void clearList();
@@ -53,7 +53,7 @@ void arrayListType<elemType>::remove(const elemType &item)
         loc=seqSearch(item);
         if(loc!=-1)
         {
-            removeAt(loc,item);
+            removeAt(loc);
         }
         else{
             cout<<"The Item Tobe Deleted Is Not Present In List\n";
@@ -122,7 +122,7 @@ void arrayListType<elemType>::replaceAt(int loc,const elemType &item)
 template<class elemType>
 void arrayListType<elemType>::retreiveAt(int loc, elemType &item)
 {
-    if(loc<0||loc>=maxSize)
+    if(loc<0||loc>=length)
     {
         cerr<<"Index is Out of Range \n";
     }
@@ -131,25 +131,25 @@ void arrayListType<elemType>::retreiveAt(int loc, elemType &item)
     }
 }
 template <class elemType>
-void arrayListType<elemType>::insertEnd(const elemType &iem)
+void arrayListType<elemType>::insertEnd(const elemType &item)
 {
     if(length>=maxSize)
     {
         cerr<<"List is Full \n";
     }
     else{
-        lies[length++]=item;
+        list[length++]=item;
     }
 }
 template <class elemType>
-void arrayListType<elemType>::removeAt(int loction,const elemType &item)
+void arrayListType<elemType>::removeAt(int location)
 {
-    if(location<0||location>=maxSize)
+    if(location<0||location>=length)
     {
         cerr<<"The Invalid Index to Remove\n";
     }
     else{
-        for(int i=locaion;i>length;i++)
+        for(int i=location;i<length-1;i++)
         {
             list[i]=list[i+1];
         }
@@ -157,7 +157,7 @@ void arrayListType<elemType>::removeAt(int loction,const elemType &item)
     }
 }
 template <class elemType>
-void arrayListType<elemType>::inserAt(int location,const elemType& item)
+void arrayListType<elemType>::insertAt(int location,const elemType& item)
 {
     if(location<0||location>=maxSize)
     {
@@ -193,7 +193,7 @@ void arrayListType<elemType>::print()
     {
         cout << list[i] << " ";
     }
-    iostream << endl;
+    cout << endl;
 }
 template <class elemType>
 int arrayListType<elemType>::getMaxSize()

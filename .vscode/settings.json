@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "bitset": "cpp",
+        "complex": "cpp",
+        "functional": "cpp",
+        "limits": "cpp",
+        "memory": "cpp",
+        "valarray": "cpp"
+    }
+}

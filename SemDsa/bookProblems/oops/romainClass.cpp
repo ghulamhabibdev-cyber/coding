@@ -18,17 +18,15 @@ void romanClass::convertRomanTodecimal(string number)
     int prev=0;
     for (int i = number.length() - 1; i >= 0; i--)
     {
-        char digit = number[i];
-        auto it=mp.find(digit);
-        
-        if (it!=mp.end() &&it->second>=ans)
+        int ch=mp[number[i]];
+        if(ch<prev)
         {
-            ans += it->second;
+            ans-=ch;
         }
-        else
-        {
-            ans -= it->second;
+        else{
+            ans+=ch;
         }
+        prev=ch;
     }
     cout << "Ans  : " << ans << endl;
 }

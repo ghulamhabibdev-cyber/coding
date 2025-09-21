@@ -7,7 +7,20 @@ class a
 
 int main()
 {
-    arrayListType<int> list(-12);
+    int size;
+    cout<<"Enter Size of List\n";
+    cin>>size;
+    arrayListType<int> list(size);
+    for(int i=0;i<size;i++)
+    {
+        int number;
+        cout<<"enter a number \n";
+        cin>>number;
+        list.insertAt(i,number);
+    }
+    list.print();
+    list.removeAt(3);
+    list.print();
 
     return 0;
 }

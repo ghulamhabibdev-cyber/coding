@@ -54,7 +54,7 @@ ostream &operator<<(ostream &os, const polyNomial &p)
         {
             if (!first && p.list[i] > 0) os << "+ ";
             if (p.list[i] < 0) os << "- ";
-            os << fabs(p.list[i]);
+            os<< fabs(p.list[i]);
             if (i > 0) os << "x^" << i;
             os << " ";
             first = false;

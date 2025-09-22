@@ -1,17 +1,38 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-class  a
+class a
 {
-
 };
 
 int main()
 {
-    int num=2;
-    int num2=4;
-    int ans=num|num2;
-    cout<<ans<<endl;
+    /*
+    *****
+    *****
+    *****
+    ABCDE
+    */
 
+    char ch = 'A';
+
+    for (int i = 0; i < 4; i++)
+    {
+
+        for (int j = 0; j < 4; j++)
+        {
+            if (i == j+3-j)
+            {
+                cout << ch;
+                ch++;
+            }
+            else
+            {
+                cout << "*";
+            }
+            
+        }
+        cout << endl;
+    }
 
     return 0;
 }

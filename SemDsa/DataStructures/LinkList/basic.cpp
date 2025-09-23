@@ -67,8 +67,7 @@ void printList( node *head)
         cout<<temp->info<<" ";
         temp=temp->link;
         /* code */
-    }
-    
+    }    
 }
 void deleNode(node *&head, int pos)
 {
@@ -101,8 +100,9 @@ void deleNode(node *&head, int pos)
     delete del;
     
 }
-node *reverseList(node *head)
+node *reverseList(node *&head)
 {
+
 }
 
 int main()

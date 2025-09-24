@@ -92,6 +92,11 @@ public:
     void insertLast(const Type &item);
     void deleteNode(const Type &delItem);
     void makeStraight();
+    bool search(const Type &item);
+    void insert(const Type &item);
+    void insertFirst(const Type &item);
+    void insertLast(const Type &item);
+    void deleteNode(const Type &delItem);
     const doublyLinkList<Type> &operator=(const doublyLinkList<Type> &otherList);
 
 public:
@@ -101,15 +106,39 @@ public:
 
 private:
     void copy(doublyLinkList<Type> &otherList);
-
 private:
     int len;
     node<Type> *first;
     node<Type> *last;
 };
 template<class Type>
+void doublyLinkList<Type>::insert(const Type &item)
+{
+    
+}
+template<class Type>
+void doublyLinkList<Type>::insertFirst(const Type &item)
+{
+    insert(item);
+}
+template<class Type>
+void doublyLinkList<Type>::insertLast(const Type &item)
+{
+    insert(item);
+}
+template<class Type>
 void doublyLinkList<Type>::makeStraight()
 {
+    node<Type>*slow=first;
+    node<Type>*fast=first->next;
+    while (fast!=slow)
+    {
+        slow=slow->next;
+        fast=fast->next->next;
+        
+    }
+    fast->next=NULL;
+    first->back=NULL;
     
 }
 template<class Type>

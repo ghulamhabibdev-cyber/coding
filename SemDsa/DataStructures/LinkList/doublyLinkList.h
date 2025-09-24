@@ -42,36 +42,36 @@ public:
 private:
     node<Type> *current;
 };
-template<class Type>
-bool doublyIterator<Type>::operator!=(const doublyIterator<Type>&right)
+template <class Type>
+bool doublyIterator<Type>::operator!=(const doublyIterator<Type> &right)
 {
-    return (current!=right.current);
+    return (current != right.current);
 }
-template<class Type>
-bool doublyIterator<Type>::operator==(const doublyIterator<Type>&right)
+template <class Type>
+bool doublyIterator<Type>::operator==(const doublyIterator<Type> &right)
 {
-    return (current=right.current);
+    return (current ==right.current);
 }
-template<class Type>
+template <class Type>
 doublyIterator<Type> doublyIterator<Type>::operator++()
 {
-    current=current->next;
+    current = current->next;
     return *this;
 }
 template <class Type>
 Type doublyIterator<Type>::operator*()
 {
-    return *cruuent;
+    return current->info;
 }
 template <class Type>
 doublyIterator<Type>::doublyIterator(node<Type> *nody)
 {
     this->current = nody;
 }
-template<class Type>
+template <class Type>
 doublyIterator<Type>::doublyIterator()
 {
-    current=0;
+    current = 0;
 }
 template <class Type>
 class doublyLinkList
@@ -87,10 +87,6 @@ public:
     Type back();
     void makeCircular();
     void inilizeList();
-    bool search(const Type &item);
-    void insertFirst(const Type &item);
-    void insertLast(const Type &item);
-    void deleteNode(const Type &delItem);
     void makeStraight();
     bool search(const Type &item);
     void insert(const Type &item);
@@ -106,83 +102,159 @@ public:
 
 private:
     void copy(doublyLinkList<Type> &otherList);
+
 private:
-    int len;
+    int count;
     node<Type> *first;
     node<Type> *last;
 };
-template<class Type>
+template <class Type>
 void doublyLinkList<Type>::insert(const Type &item)
 {
-    
+    node<Type> *curr=first;
+    node<Type> *prev=0;
+    node<Type> *newNode;
+    bool found = false;
+    newNode = new node<Type>(item);
+    newNode->next = NULL;
+    newNode->back = NULL;
+    if (first == NULL)
+    {
+        first = newNode;
+        last = newNode;
+        count++;
+    }
+    else
+    {
+        found = false;
+        while (curr != NULL &&!found)
+        {
+            if (curr->info >= item)
+            {
+                found = true;
+            }
+            else
+            {
+                prev = curr;
+                curr = curr->next;
+            }
+            /* code */
+        }
+        if (curr == first)
+        {
+            first->back = newNode;
+            newNode->next=first;
+            first = newNode;
+            count++;
+        }
+        else
+        {
+            if (curr != NULL)
+            {
+                prev->next = newNode;
+                newNode->back = prev;
+                newNode->next = curr;
+                curr->back = newNode;
+            }
+            else
+            {
+                prev->next = newNode;
+                newNode->back = prev;
+                last = newNode;
+            }
+            count++;
+        }
+    }
 }
-template<class Type>
+template <class Type>
+bool doublyLinkList<Type>::search(const Type &item)
+{
+    bool found = false;
+    node<Type> *current = first;
+    while (current != NULL && !found)
+    {
+        if (current->info >= item)
+        {
+            found = true;
+        }
+        else
+        {
+            current = current->next;
+        }
+        /* code */
+    }
+    if (found)
+    {
+        found = (current->info >= item);
+    }
+    return found;
+}
+
+template <class Type>
 void doublyLinkList<Type>::insertFirst(const Type &item)
 {
     insert(item);
 }
-template<class Type>
+template <class Type>
 void doublyLinkList<Type>::insertLast(const Type &item)
 {
     insert(item);
 }
-template<class Type>
+template <class Type>
 void doublyLinkList<Type>::makeStraight()
 {
-    node<Type>*slow=first;
-    node<Type>*fast=first->next;
-    while (fast!=slow)
+    if (first == nullptr || last == nullptr)
     {
-        slow=slow->next;
-        fast=fast->next->next;
-        
+        return; 
     }
-    fast->next=NULL;
-    first->back=NULL;
-    
+    first->back=0;
+    last->next=0;
+
+   
+   
 }
-template<class Type>
+template <class Type>
 void doublyLinkList<Type>::makeCircular()
 {
-    last->next=first;
-    first->back=last;
+    last->next = first;
+    first->back = last;
 }
-template<class Type>
+template <class Type>
 void doublyLinkList<Type>::inilizeList()
 {
     destroyList();
-    this->first=0;
-    this->last=0;
-    this->len=0;
+    this->first = 0;
+    this->last = 0;
+    this->count = 0;
 }
-template<class Type>
+template <class Type>
 int doublyLinkList<Type>::length()
 {
-    return len;
+    return count;
 }
 // impleemting douly link list
-template<class Type>
+template <class Type>
 void doublyLinkList<Type>::print()
 {
-    node<Type>* temp=first;
-    while (temp!=NULL)
+    node<Type> *temp = first;
+    while (temp != NULL)
     {
-        cout<<temp->info<<" ";
-        temp=temp->next;
+        cout << temp->info << " ";
+        temp = temp->next;
         /* code */
     }
-    cout<<endl;
-    
+    cout << endl;
 }
 template <class Type>
 doublyIterator<Type> &doublyLinkList<Type>::end()
 {
+   return doublyIterator<Type>(last);
+    
 }
 template <class Type>
 doublyIterator<Type> &doublyLinkList<Type>::begin()
 {
-    doublyIterator<Type> temp(first);
-    return temp;
+    return doublyIterator<Type>(last);
 }
 template <class Type>
 Type doublyLinkList<Type>::back()
@@ -212,7 +284,7 @@ void doublyLinkList<Type>::copy(doublyLinkList<Type> &otherList)
     {
         first = 0;
         last = 0;
-        length = 0;
+        count = 0;
     }
     else
     {
@@ -245,7 +317,7 @@ void doublyLinkList<Type>::destroyList()
         /* code */
     }
     last = 0;
-    len = 0;
+    count = 0;
 }
 template <class Type>
 doublyLinkList<Type>::doublyLinkList(doublyLinkList<Type> &otherList)
@@ -265,7 +337,7 @@ doublyLinkList<Type>::doublyLinkList(doublyLinkList<Type> &otherList)
 template <class Type>
 doublyLinkList<Type>::doublyLinkList()
 {
-    this->len = 0;
+    this->count = 0;
     first = 0;
     last = 0;
 }

@@ -8,6 +8,7 @@
         "limits": "cpp",
         "memory": "cpp",
         "valarray": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "new": "cpp"
     }
 }

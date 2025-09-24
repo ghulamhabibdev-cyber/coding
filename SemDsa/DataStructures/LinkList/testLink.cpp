@@ -1,24 +1,40 @@
-#include<bits/stdc++.h>
+// #include<bits/stdc++.h>
+#include <iostream>
 #include "ImplementGenericLinkList.h"
+// #include "UnoredLinkList.h"
+#include "orderedLinkListImp.h"
 using namespace std;
-
-
 int main()
 {
-    node<int> * h1=new node<int>(10);
-    node<int> * h2=new node<int>(10);
-    node<int> * h3=new node<int>(10);
-    node<int> * h4=new node<int>(10);
-    node<int> * h5=new node<int>(10);
-    node<int> * h6=new node<int>(10);
-    node<int> * h7=new node<int>(10);
-    node<int> * h8=new node<int>(10);
-    LinkList<int> *list;
-    list->insertFirst(h1);
     
-
-    cout<<h1->info;
-
+    // UnorderedLinkList<int> *list = new UnorderedLinkList<int>();
+    // list->insertFirst(10);
+    // list->insertFirst(12);
+    // list->insertFirst(13);
+    // list->insertFirst(14);
+    // list->print();
+    // // list->destroyList();
+    // // list->print();
+    // bool found=list->search(10);
+    // if(found)
+    // {
+    //     cout<<"Work\n";
+    // }
+    // list->destroyList();
+    // list->print();
+    // list->deleteNode(10);
+    // list->deleteNode(12);
+    // list->print();
+    // cout<<"Is Empty : "<<list->isEmpty();
+    orderedLinkList<int>*listy=new orderedLinkList<int>();
+    listy->insertFirst(10);
+    listy->insert(100);
+    listy->insert(132);
+    listy->insert(23);
+    listy->insert(134);
+    listy->print();
+    
+    
 
     return 0;
 }

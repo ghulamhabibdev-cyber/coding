@@ -86,7 +86,7 @@ public:
     LinkList(const LinkList<Type> &otherList);
     ~LinkList();
     // LinkList(const LinkList<Type> &OtherList);
-    virtual bool search(const Type &item)=0;
+    virtual bool search(const Type &item) = 0;
     virtual void insertFirst(const Type &item) = 0;
     virtual void insertLast(const Type &item) = 0;
     virtual void deleteNode(const Type &delItem) = 0;
@@ -102,10 +102,10 @@ protected:
 };
 
 // implement the generic iteraor for Linkk list
-template<class Type>
+template <class Type>
 bool LinkList<Type>::isEmpty()
 {
-    if(first==NULL && last==NULL && count==0)
+    if (first == NULL && last == NULL && count == 0)
     {
         return true;
     }
@@ -125,8 +125,8 @@ template <class Type>
 LinkList<Type>::LinkList(const LinkList<Type> &otherList)
 {
     first = NULL;
-    last=NULL;
-    count=0;
+    last = NULL;
+    count = 0;
     copy(otherList);
 }
 template <class Type>
@@ -142,6 +142,12 @@ void LinkList<Type>::copyList(const LinkList<Type> &otherList)
     if (first != NULL)
     {
         destroyList();
+    }
+    if (otherList.first == NULL)
+    {
+        first = nullptr;
+        last = nullptr;
+        length = 0;
     }
     else
     {
@@ -194,14 +200,14 @@ int LinkList<Type>::length()
 template <class Type>
 void LinkList<Type>::print()
 {
-    
+
     node<Type> *temp = first;
     while (temp != NULL)
     {
         cout << temp->info << " ";
         temp = temp->link;
     }
-    cout<<endl;
+    cout << endl;
 }
 template <class Type>
 void LinkList<Type>::intializeList()

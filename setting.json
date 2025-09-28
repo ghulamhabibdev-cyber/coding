@@ -1,0 +1,135 @@
+
+{
+
+"workbench.colorTheme": "Tokyo Night Storm",
+"workbench.iconTheme": "material-icon-theme",
+"editor.fontFamily": "Consolas, 'Courier New', monospace",
+"editor.fontLigatures": false,
+"editor.fontSize": 16,
+"editor.lineHeight": 1.6,
+"editor.cursorBlinking": "smooth",
+"editor.cursorSmoothCaretAnimation": "on",
+"editor.smoothScrolling": true,
+"editor.minimap.enabled": false,
+"editor.renderWhitespace": "all",
+"editor.rulers": [80, 120],
+"editor.renderLineHighlight": "all",
+"editor.overviewRulerBorder": false,
+"editor.guides.bracketPairs": true,
+"editor.bracketPairColorization.enabled": true,
+
+
+"terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
+"terminal.integrated.fontSize": 14,
+"terminal.integrated.cursorStyle": "block",
+"terminal.integrated.cursorBlinking": false,
+"terminal.integrated.lineHeight": 1.3,
+"terminal.integrated.scrollback": 2000,
+"terminal.integrated.smoothScrolling": false,
+"terminal.integrated.gpuAcceleration": "off",
+
+"explorer.compactFolders": false,
+"explorer.confirmDelete": false,
+"explorer.confirmDragAndDrop": false,
+
+
+"editor.formatOnSave": true,
+"files.trimTrailingWhitespace": true,
+"files.insertFinalNewline": true,
+"files.autoSave": "afterDelay",
+
+"git.enableSmartCommit": true,
+"git.confirmSync": false,
+"git.autofetch": true,
+
+
+"editor.suggestSelection": "first",
+"editor.inlineSuggest.enabled": true,
+
+
+"workbench.startupEditor": "newUntitledFile",
+"workbench.sideBar.location": "left",
+"breadcrumbs.enabled": true,
+"window.zoomLevel": 1,
+"workbench.editor.tabSizing": "shrink",
+"workbench.editor.labelFormat": "short",
+"workbench.editor.tabCloseButton": "right",
+"workbench.editor.highlightModifiedTabs": true,
+"workbench.statusBar.visible": true,
+
+
+"editor.scrollbar.verticalScrollbarSize": 10,
+"editor.scrollbar.horizontalScrollbarSize": 10,
+
+"zenMode.centerLayout": true,
+"zenMode.fullScreen": false,
+"zenMode.hideActivityBar": true,
+"zenMode.hideStatusBar": true,
+"zenMode.silentNotifications": true,
+
+"code-runner.runInTerminal": true,
+"code-runner.saveFileBeforeRun": true,
+"code-runner.executorMapByFileExtension": {
+  ".cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+},
+
+
+"github.copilot.enable": {
+  "*": false
+},
+
+
+"workbench.colorCustomizations": {
+  "editor.background": "#0d1117",
+  "editor.foreground": "#e5e5e5",
+  "editorCursor.foreground": "#00e5ff",
+  "editorLineNumber.foreground": "#565f89",
+  "editorLineNumber.activeForeground": "#00e5ff",
+  "editor.selectionBackground": "#264f78",
+  "editor.inactiveSelectionBackground": "#1e293b",
+  "editorIndentGuide.background": "#2f3549",
+  "editorIndentGuide.activeBackground": "#00e5ff",
+  "editorLineHighlightBackground": "#1a1c25",
+  "sideBar.background": "#0d1117",
+  "sideBar.foreground": "#d1d5db",
+  "statusBar.background": "#1a1c25",
+  "statusBar.foreground": "#ffffff",
+  "activityBar.background": "#0f111a",
+  "activityBar.foreground": "#00e5ff",
+  "activityBarBadge.background": "#00e5ff",
+  "activityBarBadge.foreground": "#0f111a"
+},
+
+"editor.tokenColorCustomizations": {
+  "textMateRules": [
+    {
+      "scope": ["keyword.control.cpp", "keyword.control.c", "keyword.control.cs"],
+      "settings": { "foreground": "#FF5F56" }
+    },
+    {
+      "scope": ["storage.type.cpp", "storage.type.c", "storage.type.cs"],
+      "settings": { "foreground": "#00E5FF" }
+    },
+    {
+      "scope": ["keyword.operator.cpp", "keyword.operator.c", "keyword.operator.cs"],
+      "settings": { "foreground": "#F7E37D" }
+    },
+    {
+      "scope": ["variable.language.cpp", "variable.language.c", "variable.language.cs"],
+      "settings": { "foreground": "#4CE66F" }
+    },
+    {
+      "scope": ["constant.numeric.cpp", "constant.numeric.c", "constant.numeric.cs"],
+      "settings": { "foreground": "#FF5FFF" }
+    },
+    {
+      "scope": ["string.quoted.double.cpp", "string.quoted.double.c", "string.quoted.double.cs"],
+      "settings": { "foreground": "#5FA9F7" }
+    }
+  ]
+},
+
+
+"workbench.editor.tabActionLocation": "right",
+"editor.mouseWheelZoom": true
+}

@@ -1,4 +1,6 @@
 #include <bits/stdc++.h>
+#include<string>
+#include<iostream>
 using namespace std;
 class dayType
 {
@@ -56,7 +58,7 @@ string dayType::returnNextDay()
     {
         if(CurrentDay==dayArray[i])
         {
-            currentIndex=i;   
+            currentIndex=i;
         }
     }
     if(currentIndex==6)

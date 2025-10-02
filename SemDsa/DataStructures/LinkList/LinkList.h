@@ -29,7 +29,7 @@ class linkListIterator
 {
 public:
     linkListIterator();
-    linkListIterator(node<Tyoe> *ptr);
+    linkListIterator(node<Type> *ptr);
     Type operator*();
     linkListIterator<Type> operator++();
 
@@ -59,12 +59,12 @@ linkListIterator<Type> linkListIterator<Type>::operator++()
 template <class Type>
 bool linkListIterator<Type>::operator==(linkListIterator<Type> &rihgt)
 {
-    return (this->current == rihgt.current)
+    return (this->current == rihgt.current);
 }
 template <class Type>
 bool linkListIterator<Type>::operator!=(linkListIterator<Type> &rihgt)
 {
-    return (this->current != rihgt.current)
+    return (this->current != rihgt.current);
 }
 // implementing the LinkList the we implemnt two list unorderedLinkList and OrderedLink List
 template <class Type>
@@ -84,7 +84,7 @@ public:
     // must be implemented in derived classed
     virtual bool search(const Type &item) = 0;
     virtual void insertLast(const Type &item) = 0;
-    virtual void insertLast(const Type &item) = 0;
+    virtual void insertFirst(const Type &item) = 0;
     virtual void deleteNode(const Type &item) = 0;
     // for itereator
     linkListIterator<Type> begin();
@@ -127,17 +127,21 @@ void linkList<Type>::inlizeList()
 {
     destroyList();
 }
-
 template <class Type>
 void linkList<Type>::print()
 {
-    node<Type> *temp = first;
+    node<Type> *temp = this->first;
+    while (temp != NULL)
+    {
+        cout << temp->info << "-->" << "";
+        temp = temp->link;
+    }
+    cout<<endl;
 }
 template <class Type>
 bool linkList<Type>::isEmpty()
 {
-    if (count == 0)
-        ;
+    return (count == 0);
 }
 template <class Type>
 int linkList<Type>::Getlength()
@@ -159,7 +163,7 @@ template <class Type>
 linkListIterator<Type> linkList<Type>::begin()
 {
     // assert()
-    linkListIterator<Type> temp(last);
+    linkListIterator<Type> temp(first);
     return temp;
 }
 template <class Type>
@@ -187,9 +191,9 @@ void linkList<Type>::copyList(const linkList<Type> &other)
     {
         current = other.first;
         count = other.count;
-        first = new node<Type>
-                    first->info = current->info;
-        first->link = NULL;
+        this->first = new node<Type>;
+        this->first->info = current->info;
+        this->first->link = NULL;
         current = current->link;
         while (current != NULL)
         {
@@ -219,16 +223,130 @@ linkList<Type>::linkList(const linkList<Type> &other)
 // virtual void insertLast(const Type &item) = 0;
 // virtual void deleteNode(const Type &item) = 0;
 template <class Type>
-class UnorederedLinkList : punlic linkList<Type>
+class unorederedLinkList : public linkList<Type>
 {
+public:
     bool search(const Type &item);
     void insertLast(const Type &item);
-    void insertLast(const Type &item);
+    void insertFirst(const Type &item);
     void deleteNode(const Type &item);
 };
 template <class Type>
-class orederedLinkList : punlic linkList<Type>
+bool unorederedLinkList<Type>::search(const Type &item)
 {
+    bool found = false;
+    node<Type> *current = this->first;
+    current = this->first;
+    while (current != NULL && !found)
+    {
+        if (item == current->info)
+        {
+            found = true;
+        }
+        else
+        {
+            current = current->link;
+        }
+    }
+    if (found)
+    {
+        return found;
+    }
+    return found;
+}
+template <class Type>
+void unorederedLinkList<Type>::insertFirst(const Type &item)
+{
+    node<Type> *temp = new node<Type>(item);
+    if (this->first == NULL)
+    {
+        this->first = temp;
+        this->last = temp;
+    }
+    else
+    {
+        temp->link = this->first;
+        this->first = temp;
+    }
+    this->count++;
+}
+template <class Type>
+void unorederedLinkList<Type>::insertLast(const Type &item)
+{
+    node<Type> *temp = new node<Type>(item);
+    if (this->first == NULL)
+    {
+        this->first = temp;
+        this->last = temp;
+    }
+    else
+    {
+        this->last->link = temp;
+        this->last = temp;
+    }
+    this->count++;
+}
+template <class Type>
+void unorederedLinkList<Type>::deleteNode(const Type &item)
+{
+    node<Type> *current;
+    node<Type> *prev;
+    assert(this->first != NULL);
+    if (this->first->info == item)
+    {
+        current = this->first;
+        this->first = this->first->link;
+
+        if (this->first == NULL)
+        {
+            this->last = NULL;
+        }
+        delete current;
+    }
+    else
+    {
+        prev = this->first;
+        bool found = false;
+        // if(found)
+
+        current = this->first->link;
+        while (current != NULL && !found)
+        {
+            if (current->info != item)
+            {
+                prev = current;
+                current = current->link;
+            }
+            else
+            {
+                found = true;
+            }
+        }
+        if (found)
+        {
+            prev->link = current->link;
+            this->count--;
+            if (this->first == NULL)
+            {
+                this->last = NULL;
+            }
+            delete current;
+        }
+        else
+        {
+            cout << "Not Presnt in list\n";
+        }
+    }
+}
+template <class Type>
+class orederedLinkList : public linkList<Type>
+{
+    bool search(const Type &item);
+    void insert(const Type &item);
+    void insertFirst(const Type &item);
+    void insertLast(const Type &item);
+    void deleteNode(const Type &delItem);
 };
+
 
 #endif

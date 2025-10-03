@@ -136,7 +136,7 @@ void linkList<Type>::print()
         cout << temp->info << "-->" << "";
         temp = temp->link;
     }
-    cout<<endl;
+    cout << endl;
 }
 template <class Type>
 bool linkList<Type>::isEmpty()
@@ -339,8 +339,9 @@ void unorederedLinkList<Type>::deleteNode(const Type &item)
     }
 }
 template <class Type>
-class orederedLinkList : public linkList<Type>
+class orderedLinkList : public linkList<Type>
 {
+public:
     bool search(const Type &item);
     void insert(const Type &item);
     void insertFirst(const Type &item);
@@ -348,5 +349,143 @@ class orederedLinkList : public linkList<Type>
     void deleteNode(const Type &delItem);
 };
 
+template <class Type>
+bool orderedLinkList<Type>::search(const Type &item)
+{
+    node<Type> *temp = this->first;
+    bool found = false;
+    while (temp != NULL && !found)
+    {
+        if (temp->info >= item)
+        {
+            found = true;
+        }
+        else
+        {
+            temp = temp->link;
+        }
+    }
+    if (found)
+    {
+        found = (item == temp->info);
+        return found;
+    }
+    return found;
+}
+template <class Type>
+void orderedLinkList<Type>::insert(const Type &item)
+{
+    node<Type> *temp = new node<Type>(item);
+    node<Type> *prev;
+    node<Type> *curr;
+    bool found;
+    if (this->first == NULL)
+    {
+        this->first = temp;
+        this->last = temp;
+        this->count++;
+    }
+    else
+    {
+        curr = this->first;
+        found = false;
+        while (curr != NULL && !found)
+        {
+            if (curr->info >= item)
+            {
+                found = true;
+            }
+            else
+            {
+                prev = curr;
+                curr = curr->link;
+            }
+        }
+        if (curr == this->first)
+        {
+            temp->link = this->first;
+            this->first = temp;
+        }
+        else
+        {
+            prev->link = temp;
+            temp->link = curr;
+            if (curr == NULL)
+            {
+                this->last = temp;
+            }
+        }
+        this->count++;
+    }
+}
+template <class Type>
+void orderedLinkList<Type>::insertFirst(const Type &item)
+{
+    insert(item);
+}
+template <class Type>
+void orderedLinkList<Type>::insertLast(const Type &item)
+{
+    insert(item);
+}
+template <class Type>
+void orderedLinkList<Type>::deleteNode(const Type &delItem)
+{
+    node<Type> *prev;
+    node<Type> *curr;
+    bool found;
+    if (this->first == NULL)
+    {
+        cout << "Cant not delte from empty list \n";
+        return;
+    }
+    else
+    {
+        found = false;
+        curr = this->first;
+        while (curr != NULL && !found)
+        {
+            if (curr->info >= delItem)
+            {
+                found = true;
+            }
+            else
+            {
+                prev = curr;
+                curr = curr->link;
+            }
+        }
+        if (curr == NULL)
+        {
+            cout << "Not Present in List \n";
+            return;
+        }
+        else
+        {
+            if (curr->info == delItem)
+            {
+                if (this->first = curr)
+                {
+                    this->first = this->first->link;
+                    if (this->first == NULL)
+                    {
+                        this->last == NULL;
+                    }
+                    delete curr;
+                }
+                else
+                {
+                    prev->link = curr->link;
+                    if (curr == this->last)
+                    {
+                        this->last = prev;
+                    }
+                    delete curr;
+                }
+                this->count--;
+            }
+        }
+    }
+}
 
 #endif

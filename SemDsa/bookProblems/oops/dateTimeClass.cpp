@@ -30,26 +30,27 @@ public:
     dateTime(int month = 1, int day = 1, int year = 1900);
     int getNoPassedDay();
     int getNoRemainDayOfYear();
-    int drawNewDate(int noOfDays);
+    string drawNewDate(int noOfDays);
 
 private:
     bool isValidYear(int year);
     bool isLeap(int year);
     bool isValidMonth(int month);
 };
-int dateTime::drawNewDate(int noOfDays)
+string dateTime::drawNewDate(int noOfDays)
 {
-    // int currentMonth=dMonth;
-    // int currentDate=dDay;
-    int remainDay=monthArr[dMonth-1]-dDay;
-    int nexy=dMonth;
-    while (remainDay>monthArr[nexy])
-    {
-        
-        /* code */
-    }
-
-
+   int remainingDays=monthArr[dMonth-1]-dDay;
+   int sum=0;
+   sum+=remainingDays;
+   int i=dMonth;
+   while(sum<noOfDays)
+   {
+    sum+=monthArr[i];
+    i++;
+   }
+   int date = (noOfDays - sum);
+    string newData= to_string(i) + "/" +to_string(date) + "/" +to_string(dYear);
+    return newData;
 }
 int dateTime::getNoRemainDayOfYear()
 {
@@ -63,6 +64,7 @@ int dateTime::getNoRemainDayOfYear()
     {
         remainDays = 365 - noPassedDay;
     }
+    return remainDays;
 }
 int dateTime::getNoPassedDay()
 {
@@ -227,12 +229,13 @@ void dateTime::setDate(int month, int day, int year)
 }
 int main()
 {
-    dateTime dt(12, 30, 2021);
-    dt.printDate();
+    dateTime dt(3, 3, 2025);
+    // dt.printDate();
     int month = 2;
-    cout << "NO Days In : " << month << "  :  " << dt.noOfDayInMonth(month) << endl;
-    cout << "NO OF PASSED : " << dt.getNoPassedDay() << endl;
-    cout << "No remain Day : " << dt.getNoRemainDayOfYear();
+    // cout << "NO Days In : " << month << "  :  " << dt.noOfDayInMonth(month) << endl;
+    // cout << "NO OF PASSED : " << dt.getNoPassedDay() << endl;
+    // cout << "No remain Day : " << dt.getNoRemainDayOfYear();
+    cout<<dt.drawNewDate(50);
     // dt.printDate();
 
     return 0;

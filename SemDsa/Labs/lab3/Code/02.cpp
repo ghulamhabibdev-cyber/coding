@@ -135,8 +135,8 @@ void List::Delete(int data)
 
 int main()
 {
+    cout << "=================Insertion method and Deletion Method===================\n";
     List l;
-    cout << "Inserting the Data i List \n";
     l.Insert(30);
     l.Insert(31);
     l.Insert(32);
@@ -146,32 +146,10 @@ int main()
     l.Insert(36);
     l.Insert(37);
     l.Insert(39);
-    l.Insert(40);
-    l.Insert(41);
-    l.Insert(42);
-    l.Insert(43);
-    l.Insert(44);
-    l.Insert(45);
-
-    cout << "Printing the Data \n";
     l.Print();
-    cout << "Deleting the Data \n";
-    l.Delete(32);
-    l.Delete(33);
-    l.Delete(34);
-    l.Delete(35);
-    l.Delete(36);
-    l.Delete(37);
-    cout<<"Printing After the Deletion \n";
+    l.Delete(39);
+    l.addbetween(123);
+    l.addbetween(1320);
     l.Print();
-    cout<<"Inseting Between \n";
-    l.addbetween(1220);
-    l.addbetween(1321);
-    l.addbetween(1322);
-    l.addbetween(1323);
-    l.addbetween(1324);
-    cout<<"Printing the List after the Insertion \n";
-    l.Print();
-
     return 0;
 }

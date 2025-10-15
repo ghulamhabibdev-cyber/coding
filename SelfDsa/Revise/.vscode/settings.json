@@ -1,6 +1,7 @@
 {
-    "files.associations": {
-        "*.wmls": "javascriptlite",
-        "ostream": "cpp"
-    }
+  "files.associations": {
+    "*.wmls": "javascriptlite",
+    "ostream": "cpp",
+    "xstring": "cpp"
+  }
 }

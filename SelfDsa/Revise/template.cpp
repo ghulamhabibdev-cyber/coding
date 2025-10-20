@@ -3,6 +3,7 @@ using namespace std;
 
 int main()
 {
+
     int num;
     cout << "Enter a positive number: ";
     cin >> num;
@@ -15,6 +16,6 @@ int main()
 
 negative: // label
     cout << "You entered a negative number!" << endl;
-    cout << "enter \n";
+   
     return 0;
 }

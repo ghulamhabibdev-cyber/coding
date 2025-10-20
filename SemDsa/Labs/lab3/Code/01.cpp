@@ -34,9 +34,10 @@ Node *Node::getNext()
 }
 int main()
 {
+    cout << "========setter getter method=======\n";
     Node *node1 = new Node();
     node1->setData(12);
-    cout << node1->getData()<<endl;
+    cout << node1->getData() << endl;
     Node *node2 = new Node();
     node2->setData(30);
     node1->setNext(node2);

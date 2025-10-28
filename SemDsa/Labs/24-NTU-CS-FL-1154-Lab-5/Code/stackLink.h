@@ -57,7 +57,7 @@ bool stack::isFull()
 }
 bool stack::isEmpty()
 {
-    if(topNode==NULL)
+    if (topNode == NULL)
     {
         return true;
     }
@@ -65,21 +65,22 @@ bool stack::isEmpty()
 }
 void stack::display()
 {
-    node * temp=topNode;
-    while(temp!=NULL)
+    node *temp = topNode;
+    while (temp != NULL)
     {
-        cout<<temp->getData()<<" ";
-        temp=temp->getNext();
+        cout << temp->getData() << " ";
+        temp = temp->getNext();
     }
-    cout<<endl;
+    cout << endl;
 }
 int stack::top()
 {
-    if(topNode!=NULL)
+    if (topNode != NULL)
     {
         return topNode->getData();
     }
-    else{
+    else
+    {
         return -1;
     }
 }
@@ -114,8 +115,9 @@ void stack::pop()
         delete temp;
         count--;
     }
-    else{
-        cout<<"Empty Stack \n";
+    else
+    {
+        cout << "Empty Stack \n";
     }
 }
 #endif

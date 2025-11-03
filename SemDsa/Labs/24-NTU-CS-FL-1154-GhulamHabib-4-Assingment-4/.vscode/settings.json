@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*.wmls": "javascriptlite",
+        "xutility": "cpp",
+        "stack": "cpp",
+        "queue": "cpp",
+        "xstring": "cpp"
+    },
+    "cSpell.words": [
+        "Dequing",
+        "Quequ"
+    ]
+}

@@ -21,7 +21,7 @@ int getHeight(Node *root)
 {
     if (!root)
         return 0;
-        return root->height;
+    return root->height;
 }
 int getBalacneFactor(Node * root )
 {

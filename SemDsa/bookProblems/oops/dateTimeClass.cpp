@@ -8,12 +8,12 @@ private:
     int dDay;
     int dMonth;
     int dYear;
-    int monthArr[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    string monthStrArray[12] = {
+   static int monthArr[] = {0,31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    string monthStrArray[] = {"errot",
         "January", "February", "March", "April",
         "May", "June", "July", "August",
         "September", "October", "November", "December"};
-    string weekStrArray[7] = {
+    string weekStrArray[] = {"error",
         "Sunday", "Monday", "Tuesday", "Wednesday",
         "Thursday", "Friday", "Saturday"};
 

@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
 #include <string>
 #include <iostream>
 #include<vector>
@@ -7,8 +7,7 @@
 #include<climits>
 #include<list>
 using namespace std;
-class  a
-{
+class  a{
 
 };
 

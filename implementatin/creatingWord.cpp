@@ -9,18 +9,19 @@
 #include <list>
 using namespace std;
 
-class A
-{
+class A {
 };
 
-int main()
-{
-    string str = "12.00";
-    int i = 0;
-    while (str[i] != '.')
+int main() {
+    int n;
+    cin>>n;
+    for(int i=0;i<n;i++)
     {
-        i++;
+        string str;
+        string strb;
+        cin>>str>>strb;
+        swap(str[0],strb[0]);
+        cout<<str<<" "<<strb<<endl;
     }
-    cout << i << endl;
     return 0;
 }

@@ -9,18 +9,18 @@
 #include <list>
 using namespace std;
 
-class A
-{
+class A {
 };
 
-int main()
-{
-    string str = "12.00";
-    int i = 0;
-    while (str[i] != '.')
+int main() {
+    int n;
+    cin>>n;
+    for(int i=0;i<n;i++)
     {
-        i++;
+        int a,b;
+        cin>>a>>b;
+        int diff=abs(a-b);
+        cout<<diff<<endl;
     }
-    cout << i << endl;
     return 0;
 }

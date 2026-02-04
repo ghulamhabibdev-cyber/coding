@@ -11,10 +11,8 @@ using namespace std;
 
 class graph
 {
-
     int **adjMatrix;
     int vertices;
-
 public:
     graph(int v)
     {

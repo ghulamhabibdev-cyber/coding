@@ -23,16 +23,16 @@ int requireRemind(int x, int y, int n)
 }
 int main()
 {
-    // int t;
-    // cin >> t;
+    int t;
+    cin >> t;
 
-    // for (int i = 0; i < t; i++)
-    // {
-    //     int x, y, n;
-    //     cin >> x >> y >> n;
-    //     int ans = requireRemind(x, y, n);
-    //     cout << ans << endl;
-    // }
-cout<<40%50<<endl;
+    for (int i = 0; i < t; i++)
+    {
+        int x, y, n;
+        cin >> x >> y >> n;
+        int ans = requireRemind(x, y, n);
+        cout << ans << endl;
+    }
+
     return 0;
 }

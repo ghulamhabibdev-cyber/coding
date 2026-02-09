@@ -9,84 +9,29 @@
 #include <list>
 using namespace std;
 
-class A
-{
-};
-
 int main()
 {
     int t;
     cin >> t;
 
-    for (int i = 0; i < t; i++)
+    while (t--)
     {
-        unordered_map<char, bool> mp;
-        string str;
-        cin >> str;
-        if (str.length() % 2 == 1)
+        string s;
+        cin >> s;
+
+        int n = s.length();
+
+        if (n % 2 != 0)
         {
-            cout << "NO" << endl;
+            cout << "NO\n";
             continue;
         }
-        int n = str.length();
-        int idx = 0;
-        string word = "";
-        for (int j = 0; j < n; j++)
-        {
-            char ch = str[j];
-            if (mp.find(ch) != mp.end())
-            {
-                idx++;
-                break;
-            }
-            else
-            {
-                mp[ch] = true;
-                word += ch;
-                idx++;
-            }
-        }
-
-        string Nextword = "";
-        int lenCount = 0;
-        int len = word.length();
-        int wordCount = 0;
-        bool checkFlag = true;
-        while (idx < n)
-        {
-            char ch = str[idx];
-            if (lenCount == len)
-            {
-                if (Nextword == word)
-                {
-                    Nextword = "";
-                    wordCount++;
-                }
-                else
-                {
-                    cout << "NO" << endl;
-                    wordCount = 5;
-                    break;
-                }
-            }
-            if (mp.find(ch) != mp.end())
-            {
-                lenCount++;
-                Nextword += ch;
-            }
-            else
-            {
-                cout << "NO" << endl;
-                checkFlag = false;
-                break;
-            }
-            idx++;
-        }
-        if (checkFlag && wordCount % 2 == 0)
-        {
-            cout << "I am Har" << wordCount << endl;
-            cout << "Yes" << endl;
-        }
+        string first = s.substr(0, n / 2);
+        string second = s.substr(n / 2);
+        if (first == second)
+            cout << "YES\n";
+        else
+            cout << "NO\n";
     }
     return 0;
 }

@@ -3,7 +3,6 @@ def mySort(x, y):
         print(y, x)
     else:
         print(x, y)
-
 n = int(input())
 while n > 0:
     x, y = map(int, input().split())

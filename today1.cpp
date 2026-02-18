@@ -5,6 +5,6 @@ class A {
 };
 
 int main() {
-    
+    cout<<"Hell world"
     return 0;
 }

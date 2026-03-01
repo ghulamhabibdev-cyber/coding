@@ -35,14 +35,20 @@ int minLengthToWhite(string str)
 int main() {
     int testCases;
     cin>>testCases;
+    vector<int> arr;
     while(testCases--)
     {
         string str;
         int n;
         cin>>n;
         cin>>str;
-        int ans=minLengthToWhite(str);
-        cout<<ans<<endl;
+       
+       int ans=minLengthToWhite(str);
+        arr.push_back(ans);
+    }
+    for(int n:arr)
+    {
+        cout<<n<<endl;
     }
     return 0;
 }

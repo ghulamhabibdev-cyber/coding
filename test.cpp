@@ -9,12 +9,20 @@
 #include <list>
 using namespace std;
 
-class A
+class Solution
 {
+public:
+    string licenseKeyFormatting(string s, int k)
+    {
+        
+    }
 };
 
-int main()
-{
-    cout << (-4 % 2) << endl;
+int main() {
+    Solution s;
+    int k=4;
+    string str="5F3Z-2e-9-w";
+    cout<<s.licenseKeyFormatting(str,k);
+    
     return 0;
 }

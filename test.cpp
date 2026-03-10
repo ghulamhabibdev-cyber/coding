@@ -7,6 +7,10 @@
 #include <algorithm>
 #include <limits>
 #include <list>
+#include <time.h>
+#include <cstdlib>
+#include <ctime>
+// typedef string url;
 using namespace std;
 
 class Solution
@@ -24,5 +28,4 @@ int main() {
     string str="5F3Z-2e-9-w";
     cout<<s.licenseKeyFormatting(str,k);
     
-    return 0;
 }

@@ -1,31 +1,87 @@
 #include <iostream>
 #include <vector>
 #include <unordered_map>
-#include <map>
-#include <queue>
-#include <stack>
 #include <algorithm>
-#include <limits>
-#include <list>
-#include <time.h>
-#include <cstdlib>
-#include <ctime>
-// typedef string url;
+#include <string>
 using namespace std;
 
 class Solution
 {
 public:
-    string licenseKeyFormatting(string s, int k)
+    int getCount(string url)
     {
-        
+        int num = 0;
+        int i = 0;
+        while (url[i] != ' ')
+        {
+            int digit = url[i] - '0';
+            num = num * 10 + digit;
+            i++;
+        }
+        return num;
+    }
+
+    vector<string> getAllDomain(string url)
+    {
+        int i = 0;
+        while (url[i] != ' ')
+        {
+            i++;
+        }
+
+        string domain = url.substr(i + 1);
+
+        vector<string> v;
+        v.push_back(domain);
+
+        for (int j = 0; j < domain.size(); j++)
+        {
+            if (domain[j] == '.')
+            {
+                v.push_back(domain.substr(j + 1));
+            }
+        }
+        return v;
+    }
+
+    vector<string> subdomainVisits(vector<string> &cpDomains)
+    {
+        unordered_map<string, int> mp;
+
+        for (string currUrl : cpDomains)
+        {
+            int num = getCount(currUrl);
+            vector<string> v = getAllDomain(currUrl);
+
+            for (string sub : v)
+            {
+                mp[sub] += num;
+            }
+        }
+
+        vector<string> ans;
+
+        for (auto &p : mp)
+        {
+            ans.push_back(to_string(p.second) + " " + p.first);
+        }
+
+        return ans;
     }
 };
 
-int main() {
+int main()
+{
     Solution s;
-    int k=4;
-    string str="5F3Z-2e-9-w";
-    cout<<s.licenseKeyFormatting(str,k);
-    
+
+    vector<string> v = {"900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"};
+
+    vector<string> ans = s.subdomainVisits(v);
+
+    for (string str : ans)
+    {
+        cout << str << endl;
+    }
+
+    return 0;
 }

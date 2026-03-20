@@ -15,12 +15,13 @@ vector<int> findDigit(int a,int b,int c,int d)
 {
     vector<int>ans;
     ans.push_back(b);
-    if(b-c==0)
-    {
-        ans.push_back(b);
-    }else{
-        ans.push_back(b+1);
-    }
+    // if(b-c==0)
+    // {
+    //     ans.push_back(b);
+    // }else{
+    //     ans.push_back(b+1);
+    // }
+    ans.push_back(c);
     ans.push_back(c);
     return ans;
 }

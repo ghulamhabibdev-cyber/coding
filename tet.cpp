@@ -1,27 +1,33 @@
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
 using namespace std;
-
-string randomWord(int t)
-{
-    string word = "";
-
-    for (int i = 0; i < t; i++)
-    {
-        char ch = 'a' + rand() % 26;
-        word += ch;
-    }
-
-    return word;
-}
 
 int main()
 {
-    srand(time(0)); // seed for randomness
-
     int t;
     cin >> t;
 
-    cout << randomWord(t) << endl;
+    while (t--)
+    {
+        string s;
+        cin >> s;
+
+        char col = s[0];
+        char row = s[1];
+        for (char r = '1'; r <= '8'; r++)
+        {
+            if (r != row)
+            {
+                cout << col << r << endl;
+            }
+        }
+        for (char c = 'a'; c <= 'h'; c++)
+        {
+            if (c != col)
+            {
+                cout << c << row << endl;
+            }
+        }
+    }
+
+    return 0;
 }

@@ -11,22 +11,21 @@ int main()
         string s;
         cin >> s;
 
-        char col = s[0];
-        char row = s[1];
-        for (char r = '1'; r <= '8'; r++)
+        bool hasPair = false;
+
+        for (int i = 0; i < s.size() - 1; i++)
         {
-            if (r != row)
+            if (s[i] == s[i + 1])
             {
-                cout << col << r << endl;
+                hasPair = true;
+                break;
             }
         }
-        for (char c = 'a'; c <= 'h'; c++)
-        {
-            if (c != col)
-            {
-                cout << c << row << endl;
-            }
-        }
+
+        if (hasPair)
+            cout << 1 << endl;
+        else
+            cout << s.size() << endl;
     }
 
     return 0;

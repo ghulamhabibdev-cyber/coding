@@ -56,21 +56,20 @@ void habibSort(vector<int> &arr)
 {
     int negIndex = getNegIndex(arr);
     int zeroIndex = getZeroIndex(arr, 0);
-    int posIndex=zeroIndex+1;
-    if(negIndex!=-1)
+    int posIndex = zeroIndex + 1;
+    if (negIndex != -1)
     {
-        int s=0;
-        int e=negIndex;
-        while()
+        int s = 0;
+        int e = negIndex;
+        while ()
         {
-            swap(arr[s],arr[e]);
+            swap(arr[s], arr[e]);
             s++;
             e--;
         }
     }
     if (zeroIndex != -1)
     {
-        
     }
 }
 void separateNeg(vector<int> &arr)

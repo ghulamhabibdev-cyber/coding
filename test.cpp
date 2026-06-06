@@ -7,109 +7,111 @@
 #include <algorithm>
 #include <limits>
 #include <list>
-#include <time.h>
-#include <cstdlib>
-#include <ctime>
-// typedef string url;
 using namespace std;
 
-class Solution
+class A
 {
-public:
-    string firstPart = "";
-    unordered_map<string, string> mp;
-    vector<string> recordUrl;
-    // Encodes a URL to a shortened URL.
-
-    string randomWord(int t = 5)
-    {
-        srand(time(0));
-        string word = "";
-
-        for (int i = 0; i < t; i++)
-        {
-            char ch = 'a' + rand() % 26;
-            word += ch;
-        }
-
-        return word;
-    }
-    void createdFirstPart(string url)
-    {
-        int count = 0;
-        int index = 0;
-        while (count != 2 && url[index] != '/')
-        {
-            char ch = url[index];
-            index++;
-            firstPart += ch;
-            if (ch == '/')
-            {
-                count++;
-            }
-        }
-    }
-    string encode(string longUrl)
-    {
-        createdFirstPart(longUrl);
-        int index = firstPart.length();
-        int n = longUrl.length();
-        int num = rand() % 10;
-        string shortUrl = firstPart;
-        shortUrl += randomWord(num);
-        cout << shortUrl << endl;
-        shortUrl += '/';
-        cout << shortUrl << endl;
-
-        while (index < n)
-        {
-            string currWord = "";
-            int currIndex = index;
-            while (currIndex < n && longUrl[currIndex] != '/')
-            {
-                char ch = longUrl[currIndex];
-                currIndex += 1;
-                currWord += ch;
-                index++;
-            }
-            cout << currWord << endl;
-            currWord += longUrl[currIndex];
-            int currWordLen = currWord.length();
-            string ch = currWord.substr(0, currWordLen / 2 + 1);
-            recordUrl.push_back(ch);
-
-            mp[ch] = currWord;
-            cout << currWord << endl;
-            index++;
-            shortUrl += ch;
-        }
-        cout << shortUrl << endl;
-        // cout << recordUrl << endl;
-        return shortUrl;
-    }
-
-    // Decodes a shortened URL to its original URL.
-    string decode(string shortUrl)
-    {
-        string longUrl = firstPart;
-        for (string ch : recordUrl)
-        {
-            longUrl += mp[ch];
-        }
-        return longUrl;
-    }
 };
+void sepRateZero(vector<int> &arr)
+{
+    int st = 0;
+    int n = arr.size();
+    int end = n - 1;
+    int back = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] == 0)
+        {
+            swap(arr[i], arr[back]);
+            back++;
+        }
+    }
+}
 
-// Your Solution object will be instantiated and called as such:
-// Solution solution;
-// solution.decode(solution.encode(url));
+int getZeroIndex(const vector<int> &arr, int value)
+{
+    int n = arr.size();
+    int index = -1;
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] == value)
+        {
+            index = i;
+        }
+    }
+    return index;
+}
+int getNegIndex(const vector<int> &arr)
+{
+    int index = -1;
+    int i = 0;
+    while (i < arr.size() && arr[i] < 0)
+    {
+        index = i;
+        i++;
+    }
+    return index;
+}
+void habibSort(vector<int> &arr)
+{
+    int negIndex = getNegIndex(arr);
+    int zeroIndex = getZeroIndex(arr, 0);
+    int posIndex=zeroIndex+1;
+    if(negIndex!=-1)
+    {
+        int s=0;
+        int e=negIndex;
+        while()
+        {
+            swap(arr[s],arr[e]);
+            s++;
+            e--;
+        }
+    }
+    if (zeroIndex != -1)
+    {
+        
+    }
+}
+void separateNeg(vector<int> &arr)
+{
+    int zeroIndex = getZeroIndex(arr, 0);
+    if (zeroIndex != -1)
+    {
+        // Move all negative numbers to the left of the zero
+        int negIndex = zeroIndex + 1;
+        for (int i = zeroIndex + 1; i < arr.size(); i++)
+        {
+            if (arr[i] < 0)
+            {
+                swap(arr[i], arr[negIndex]);
+                negIndex++;
+            }
+        }
+        int zeroFor = 0;
+        for (int i = negIndex - 1; i > zeroIndex; i--)
+        {
+            swap(arr[i], arr[zeroFor]);
+            zeroFor++;
+        }
+    }
+}
+void print(const vector<int> &arr)
+{
+    for (int x : arr)
+    {
+        cout << x << " ";
+    }
+    cout << endl;
+}
 int main()
 {
+    vector<int> arr = {0, 1, 0, 5, 6, 7, 0, -23, 9, 0, -1, 0, -3};
 
-    Solution s;
-    string google = "https://leetcode.com/problems/encode-and-decode-tinyurl/?envType=problem-list-v2&envId=string";
-    string goo = s.encode(google);
-    cout << goo << endl;
-    cout << s.decode(goo);
+    ;
+    sepRateZero(arr);
+    print(arr);
+    separateNeg(arr);
+    print(arr);
     return 0;
 }

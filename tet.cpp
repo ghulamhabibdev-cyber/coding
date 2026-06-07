@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 #include <iostream>
 using namespace std;
 
@@ -30,3 +32,4 @@ int main()
 
     return 0;
 }
+>>>>>>> 3d9d64c778066d0c15c4e3e532af59c1981f8042

@@ -1,17 +1,9 @@
 #include <iostream>
-#include <vector>
-#include <unordered_map>
-#include <map>
-#include <queue>
-#include <stack>
-#include <algorithm>
-#include <limits>
-#include <list>
 using namespace std;
 
-class A
-{
+class A {
 };
+<<<<<<< HEAD
 bool isValid(vector<int> &alph, char ch, int k)
 {
     for (int i = 0; i < 26; i++)
@@ -80,5 +72,10 @@ int main()
     int ans = longestSubstring(s, k);
     cout << ans << endl;
 
+=======
+
+int main() {
+    
+>>>>>>> cf9caca8dc1e94e5e11a552dc8ce2fcdf467066d
     return 0;
 }

@@ -136,7 +136,7 @@ public:
         }
         Node *temp = head;
         int count = 0;
-        while (count < n - 1)
+        while (count < pos - 1)
         {
             count++;
             temp = temp->next;
@@ -148,6 +148,8 @@ public:
     }
     void addAtPos(Node *node, int pos)
     {
+        if (node == nullptr)
+            return;
         if (pos < 1)
         {
             addHead(node);
@@ -156,10 +158,11 @@ public:
         else if (pos >= length())
         {
             addTail(node);
+            return;
         }
         Node *temp = head;
         int count = 0;
-        while (count < n - 1)
+        while (count < pos - 1 && temp != nullptr)
         {
             count++;
             temp = temp->next;
@@ -170,13 +173,13 @@ public:
     }
     void clear()
     {
-       while(head!=nullptr)
-       {
-           Node *del = head;
-           head = head->next;
-           delete del;
-       }
-       this->n = 0;
+        while (head != nullptr)
+        {
+            Node *del = head;
+            head = head->next;
+            delete del;
+        }
+        this->n = 0;
     }
     void printList()
     {
@@ -203,6 +206,26 @@ int main()
     }
     list.printList();
     list.clear();
+    list.printList();
+    for (int i = 10; i < 15; i++)
+    {
+        Node *node = list.getNode(i);
+        list.addTail(node);
+    }
+    for (int i = 15; i < 20; i++)
+    {
+        Node *node = list.getNode(i);
+        list.addHead(node);
+    }
+    for (int i = 2; i < 10; i++)
+    {
+        list.addAtPos(90009, i);
+    }
+    for (int i = 3; i < 10; i++)
+    {
+        Node *node = list.getNode(1111);
+        list.addAtPos(node, i);
+    }
     list.printList();
     return 0;
 }

@@ -26,6 +26,7 @@ private:
     Node *tail;
     int n;
 
+public:
     LinkList()
     {
         this->head = tail = NULL;
@@ -121,29 +122,87 @@ private:
     {
         delete node;
     }
-    void addAtPos(int data,int pos)
+    void addAtPos(int data, int pos)
     {
-       
-        
+        if (pos < 1)
+        {
+            addHead(data);
+            return;
+        }
+        else if (pos >= length())
+        {
+            addTail(data);
+            return;
+        }
+        Node *temp = head;
+        int count = 0;
+        while (count < n - 1)
+        {
+            count++;
+            temp = temp->next;
+        }
+        Node *node = getNode(data);
+        node->next = temp->next;
+        temp->next = node;
+        increaseSize();
     }
-    void addAtPos(Node * node,int pos)
+    void addAtPos(Node *node, int pos)
     {
-        
+        if (pos < 1)
+        {
+            addHead(node);
+            return;
+        }
+        else if (pos >= length())
+        {
+            addTail(node);
+        }
+        Node *temp = head;
+        int count = 0;
+        while (count < n - 1)
+        {
+            count++;
+            temp = temp->next;
+        }
+        node->next = temp->next;
+        temp->next = node;
+        increaseSize();
     }
     void clear()
+    {
+       while(head!=nullptr)
+       {
+           Node *del = head;
+           head = head->next;
+           delete del;
+       }
+       this->n = 0;
+    }
+    void printList()
     {
         Node *temp = head;
         while (temp != nullptr)
         {
-            Node *del = temp;
-            DelNode(del);
+            cout << temp->data << " ";
             temp = temp->next;
         }
-        this->n = 0;
+        cout << endl;
     }
 };
 int main()
 {
 
+    LinkList list;
+    for (int i = 0; i < 5; i++)
+    {
+        list.addTail(i);
+    }
+    for (int i = 6; i < 10; i++)
+    {
+        list.addTail(i);
+    }
+    list.printList();
+    list.clear();
+    list.printList();
     return 0;
 }

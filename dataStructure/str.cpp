@@ -44,6 +44,24 @@ public:
             ;
         }
     }
+    char pop()
+    {
+        if (index > 0)
+        {
+            return arr[index--];
+        }
+    }
+    Str subString(int st, int range)
+    {
+        Str temp;
+        for (int i = st; (i <=range && range < index); i++)
+        {
+            cout << "in log";
+            temp.Add(arr[i]);
+        }
+        return temp;
+    }
+
     void print()
     {
         for (int i = 0; i < index; i++)
@@ -64,6 +82,9 @@ int main()
     str.Add('i');
     str.Add('b');
     str.print();
+    Str temp = str.subString(1, 3);
+    cout << "===\n";
+    temp.print();
 
     return 0;
 }

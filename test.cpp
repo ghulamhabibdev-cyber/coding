@@ -1,81 +1,43 @@
 #include <iostream>
+#include <vector>
+#include <map>
 using namespace std;
 
-class A {
-};
-<<<<<<< HEAD
-bool isValid(vector<int> &alph, char ch, int k)
+string mapWordWeights(vector<string> &words, vector<int> &weights)
 {
-    for (int i = 0; i < 26; i++)
+    int n = words.size();
+    map<string, int> mp;
+    for (int i = 0; i < n; i++)
     {
-        // cout << alph[i] << endl;
-        if (alph[i] < k)
+        string currWord = words[i];
+        int j = 0;
+        int len = currWord.length();
+        long long sum = 0;
+        while (j < len)
         {
-            return false;
-        }
-    }
-    return true;
-}
-int longestSubstring(string s, int k)
-{
-    int n = s.length();
-    int high = 0;
-    vector<int> alph(26, 0);
-    int low = 0;
-    int len = INT_MIN;
-    while (high < n)
-    {
-        char ch = s[high];
-        int index = ch - 'a';
-        // cout << ch << endl;
-        alph[index]++;
-        high++;
-        bool tr = true;
-        for (int i = low; i < high; i++)
-        {
-            char c = s[i];
-            if (!isValid(alph, c, k))
-            {
+            char ch = currWord[j];
+            int index = ch - 'a';
 
-                tr = false;
-                break;
-            }
+            sum += weights[index];
+            j++;
         }
-        // cout << "WHile tr" << endl;
-        while (tr)
-        {
-            cout << "Here";
-            char ch = s[high];
-            high++;
-            index = ch - 'a';
-            alph[index]++;
-            if (!isValid(alph, ch, k))
-            {
-                tr = false;
-                
-                alph[low]--;
-                low++;
-                break;
-            }
-            int curr = high - low + 1;
-            // cout << "I am curr : " << curr << endl;
-            len = max(curr, len);
-        }
-        
+        mp[currWord] = sum;
     }
-    return len;
+    string res = "";
+    for (int i = 0; i < n; i++)
+    {
+        int sum = mp[words[i]];
+        int mod = sum % 26;
+        char ch = 'z' - mod;
+        res += ch;
+    }
+    return res;
 }
+
 int main()
 {
-    string s = "ababbc";
-    int k = 3;
-    int ans = longestSubstring(s, k);
+    vector<string> words = {"abcd", "def", "xyz"};
+    vector<int> wts = {5, 3, 12, 14, 1, 2, 3, 2, 10, 6, 6, 9, 7, 8, 7, 10, 8, 9, 6, 9, 9, 8, 3, 7, 7, 2};
+    string ans = mapWordWeights(words, wts);
     cout << ans << endl;
-
-=======
-
-int main() {
-    
->>>>>>> cf9caca8dc1e94e5e11a552dc8ce2fcdf467066d
-    return 0;
 }

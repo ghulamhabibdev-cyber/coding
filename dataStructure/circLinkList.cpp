@@ -75,6 +75,10 @@ public:
         tail = newNode;
         n++;
     }
+    void delNode(int data)
+    {
+        Node *temp=head;
+    }
     void addHead(int data)
     {
 

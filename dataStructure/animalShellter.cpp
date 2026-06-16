@@ -50,7 +50,7 @@ public:
     {
     }
 };
-class doptionQueue
+class AdoptionQueue
 {
 private:
     class Node
@@ -76,9 +76,39 @@ private:
     };
     Node *getNode(string name, int age, string type)
     {
-        return
+        return new Node(name, age, type);
+    };
+    Node * head;
+    Node * tail;
+    int n;
+    void increase()
+    {
+        n++;
     }
-} int main()
+    void decrease()
+    {
+        if(n>0)
+        {
+            n--;
+        }
+    }
+    public:
+    AdoptionQueue()
+    {
+        head=tail=NULL;
+        n=0;
+    }
+    void enque(string name,int age,string type)
+    {
+        Node * newNode=getNode(name,age,type);
+        if(head==NULL)
+        {
+            head=tail=newNode;
+        }
+
+    }
+};
+int main()
 {
 
     return 0;

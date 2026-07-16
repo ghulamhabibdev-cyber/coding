@@ -30,6 +30,17 @@ int clearBitMsThroughI(int num, int i)
     int mask = (1 << i) - 1;
     return num & mask;
 }
+int clearBitThrought0(int num, int i)
+{
+    int mask = (-1 << (i + 1));
+    return num & mask;
+}
+int updateBit(int num, int i, bool bitIs1)
+{
+    int value = bitIs1 ? 1 : 0;
+    int mask = ~(1 << 1);
+    return (num && mask) | (value << i);
+}
 int main()
 {
     int num = 20;
@@ -37,6 +48,8 @@ int main()
     cout << setBit(num, 3) << endl;
     cout << clearBit(num, 3) << endl;
     int number = 147;
-    cout << clearBitMsThroughI(number, 2) << endl;
+    // cout << clearBitMsThroughI(number, 2) << endl;
+    cout << clearBitThrought0(number, 1)<<endl;
+    cout << updateBit(num, 3, 1) << endl;
     return 0;
 }

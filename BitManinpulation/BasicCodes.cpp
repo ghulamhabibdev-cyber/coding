@@ -41,6 +41,15 @@ int updateBit(int num, int i, bool bitIs1)
     int mask = ~(1 << 1);
     return (num && mask) | (value << i);
 }
+int bitCount(int a,int b)
+{
+    int num=a&b;
+    int count=0;
+    while(num)
+    {
+        int bit=2;
+    }
+}
 int main()
 {
     int num = 20;

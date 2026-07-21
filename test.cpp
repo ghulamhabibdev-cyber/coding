@@ -8,54 +8,25 @@
 #include <limits>
 #include <list>
 using namespace std;
-class BrowserHistory
+
+class A
 {
-    int curr;
-    int visitIndex;
-    vector<string>pages;
-public:
-    BrowserHistory(string homepage)
-    {
-        pages.push_back(homepage);
-        curr=visitIndex=0;
-    }
-
-    void visit(string url)
-    {
-        pages.push_back(url);
-        visitIndex++;
-        curr=visitIndex;
-    }
-
-    string back(int steps)
-    {
-        while(curr>0&&steps>0)
-        {
-            curr--;
-            steps--;
-        }
-        return pages[curr];
-    }
-
-    string forward(int steps)
-    {
-        while(curr<visitIndex&&steps>0)
-        {
-            curr++;
-            steps--;
-        }
-        return pages[curr];
-    }
 };
-
-/**
- * Your BrowserHistory object will be instantiated and called as such:
- * BrowserHistory* obj = new BrowserHistory(homepage);
- * obj->visit(url);
- * string param_2 = obj->back(steps);
- * string param_3 = obj->forward(steps);
- */
-int main() {
-    
+int GCD(int a, int b)
+{
+    while (b != 0)
+    {
+        int rem = a % b;
+        cout << rem << endl;
+        a = b;
+        b = rem;
+    }
+    return a;
+}
+int main()
+{
+    int a = 503;
+    int b = 509;
+    cout << GCD(a, b) << endl;
     return 0;
 }

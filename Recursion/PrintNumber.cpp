@@ -14,19 +14,24 @@ class A
 };
 void printNumber(int num, int n)
 {
-    if (num >= n)
+    if (num > n)
+    {
+        printNumber(num - 1, n);
+        cout << num << endl;
+        return;
+    }
+    if (num == n)
     {
         cout << num << endl;
         return;
     }
     cout << num << endl;
     printNumber(num + 1, n);
-    cout << "This is Call Backtrack  : " << num << " : " << n - num << endl;
 }
 int main()
 {
-    int n = 5;
-    printNumber(10, n);
+    int n = -5;
+    printNumber(-10, n);
 
     return 0;
 }

@@ -12,21 +12,14 @@ using namespace std;
 class A
 {
 };
-int GCD(int a, int b)
-{
-    while (b != 0)
-    {
-        int rem = a % b;
-        cout << rem << endl;
-        a = b;
-        b = rem;
-    }
-    return a;
-}
+
 int main()
 {
-    int a = 503;
-    int b = 509;
-    cout << GCD(a, b) << endl;
+    double a = 1;
+    double b = 1/2;
+    double c = 5/6;
+    double ans = a + b + c;
+    ans = ans / 3;
+    cout << ans << endl;
     return 0;
 }

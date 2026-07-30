@@ -36,6 +36,7 @@ class Solution {
     }
 };
 int main() {
+    cout<<(3%3)<<endl;
     
     return 0;
 }

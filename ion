@@ -1,0 +1,734 @@
+[33mcommit f91e3f5d73e1569356062b49a24b17b92790bc04[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Thu Jul 23 22:49:46 2026 +0500
+
+    fib and palindroma and reverse str
+
+[33mcommit 89386a4c67ab3277fddb05bbb6f8c64dfec118b3[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Thu Jul 23 22:08:18 2026 +0500
+
+    linear search using recursion
+
+[33mcommit c474deb89804a8604f9acee4f487f2f1c7dd7b4c[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Thu Jul 23 18:42:28 2026 +0500
+
+    day 202:
+
+[33mcommit 9ec03ef5c49dd52eb840a05fb20c8268f6ac6a30[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Wed Jul 22 23:55:09 2026 +0500
+
+    day 201:
+
+[33mcommit 718790387e0e3e587580127addd5b84a3ae4113c[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Tue Jul 21 23:48:59 2026 +0500
+
+    coding day 200
+
+[33mcommit b83cee3624295661e8131f35816575968eeef934[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Thu Jul 16 07:18:58 2026 +0500
+
+    fundament bit
+
+[33mcommit ff0d244577e5c5e857fb6a8f75551fa25184af11[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Thu Jul 16 07:11:06 2026 +0500
+
+    bit maninpualtion built in
+
+[33mcommit 84cf4e6da8b4471308da514c8fddda5cf6033e39[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Sat Jun 20 00:55:33 2026 +0500
+
+    solve using str as stack and done
+
+[33mcommit 58e4e2f78fc0d274fa9e5c1cc726a3596e4d04ba[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Sat Jun 20 00:43:29 2026 +0500
+
+    imlement valid parenthesis using string
+
+[33mcommit 56bee896bc2e127ddd857563a3f4a4e436ee233a[m
+Merge: b06aba8 8d1317d
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Thu Jun 18 23:33:31 2026 +0500
+
+    Merge branch 'main' of https://github.com/ghulamhabibdev-cyber/coding
+
+[33mcommit b06aba86c45cda1485e2628f07b8ffffa6a3ebe5[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Thu Jun 18 23:33:19 2026 +0500
+
+    implemtnet prefrence stack
+
+[33mcommit 8d1317d046e1cb683bac63fbd9027a87903a44c9[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Wed Jun 17 02:35:19 2026 +0500
+
+    implement the main method:'
+
+[33mcommit db1c56a2264c48c69ad51d409f8503dcac8bdda7[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Wed Jun 17 02:31:04 2026 +0500
+
+    impelentmenting the queuue base on user preference like the animal type to adopt:
+
+[33mcommit 763e7fd99d80c27874878e3557ac41254c4bed4b[m
+Merge: 9c5e121 0ede88c
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Wed Jun 17 01:40:55 2026 +0500
+
+    Merge brt p::anch 'main' of https://github.com/ghulamhabibdev-cyber/coding
+
+[33mcommit 9c5e1212c9199d28f56b3f2e384e95315a7e4a5e[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Wed Jun 17 01:40:45 2026 +0500
+
+    impelemtne the queue datas strucure and practise oop and private clsses
+
+[33mcommit 0ede88c194f1d4dffc6832edf993490ec42902bb[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Tue Jun 16 02:09:43 2026 +0500
+
+    implemented the stack using node and learn the concept of private classee:
+
+[33mcommit 8ed39a51a6f51fa4511812bba86467d2e05596f3[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Tue Jun 16 01:59:58 2026 +0500
+
+    implemted stack using array
+
+[33mcommit 7d0b33a8354d18d023a3ac6941c73bd3a7a50ba8[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Mon Jun 15 23:49:06 2026 +0500
+
+    implemt min stack
+
+[33mcommit 7491a474d1b398909b4fae6437538dc893cf440f[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Sun Jun 14 22:25:13 2026 +0500
+
+    try to impelment auto stack
+
+[33mcommit 2d71914735211f7809da3165b6253fa51b89e0e0[m
+Merge: f97f6af ea8d2cf
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Sun Jun 14 22:24:51 2026 +0500
+
+    Merge branch 'main' of https://github.com/ghulamhabibdev-cyber/coding
+
+[33mcommit ea8d2cf0593a88162004dcf14ce8514b672ac691[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Sun Jun 14 02:18:37 2026 +0500
+
+    implement the matrix using linkList
+
+[33mcommit cdbb065723149746ce4889c63e5ac74ee42bff68[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Sun Jun 14 02:14:23 2026 +0500
+
+    implement cir list
+
+[33mcommit 4863050b44a2f1ae51e8da5758746cac8bdcd722[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Sun Jun 14 02:12:22 2026 +0500
+
+    implement the circulist
+
+[33mcommit 648b3eb0aa8cfc98e0d7663ac6ff52b826356cbb[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Sat Jun 13 15:19:55 2026 +0500
+
+    added leetcode contest aand problems:
+
+[33mcommit 1ab5a5f9bf0af5e2875955f0f527be19259691f2[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Sat Jun 13 00:48:42 2026 +0500
+
+    implement substring
+
+[33mcommit 41dbf1a379d8e5246d4117bc3b7783e1368f1930[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Sat Jun 13 00:41:02 2026 +0500
+
+    implementing the string datastruce
+
+[33mcommit eb71993ba3e6681d4fb74f5cd7bd251576e09673[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Sat Jun 13 00:25:35 2026 +0500
+
+    done
+
+[33mcommit 2cce64b488eda940b02ef4c44d1ef3ab9fb4f76f[m
+Merge: b856a48 fec4012
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Sat Jun 13 00:25:14 2026 +0500
+
+    t :Merge branch 'main' of https://github.com/ghulamhabibdev-cyber/coding
+
+[33mcommit f97f6afb5a996c0e4a0bb0e93ad9f5757fdd3201[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Thu Jun 11 13:53:44 2026 +0500
+
+    link list in python
+
+[33mcommit 805ee40bc08510a25221c0cb19ac99358aec9fcb[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Thu Jun 11 13:37:43 2026 +0500
+
+    tested all method and working
+
+[33mcommit 27b1c7d5c101b59ebdb46730c58eefb1945e86e2[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Thu Jun 11 13:26:54 2026 +0500
+
+    complete the link list
+
+[33mcommit fec401201b0cecee0069e36f86e6c72a49f7e6c8[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Thu Jun 11 13:13:33 2026 +0500
+
+    working on link list
+
+[33mcommit bc8d2385789d87adf6199e942577bea94cbe171f[m
+Merge: 88c3509 cf9caca
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Thu Jun 11 12:22:32 2026 +0500
+
+    new workd
+
+[33mcommit 88c35093a8552217f4f5c502a6e12b504e1175d5[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Thu Jun 11 12:21:58 2026 +0500
+
+    added new feature
+
+[33mcommit b856a48feaf25824cf2da3e1009930e30653c5ab[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Wed Jun 10 22:04:13 2026 +0500
+
+    working
+
+[33mcommit 33f3a63e07f563925044052ae1e9e82a200d8dc3[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Mon Jun 8 00:29:53 2026 +0500
+
+    change file pos
+
+[33mcommit cf9caca8dc1e94e5e11a552dc8ce2fcdf467066d[m
+Merge: 85dac28 4401e8a
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Mon Jun 8 00:25:27 2026 +0500
+
+    done
+
+[33mcommit 85dac287b40f63ecfd4eacaa2242020c298ee022[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Mon Jun 8 00:24:57 2026 +0500
+
+    done
+
+[33mcommit ba5a39e14d195408449e1a92e3b76cfbb08e2a49[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Mon Jun 8 00:24:16 2026 +0500
+
+    solve the problem on sliding window:
+
+[33mcommit 4401e8a481a97a3c049b27c2eaf9a2952fa63c71[m
+Merge: e77acda 3d9d64c
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Sun Jun 7 02:20:40 2026 +0500
+
+    sorta
+
+[33mcommit e77acda72b9642cc62d14b825a3ab1ef7544ae0c[m
+Author: Ghulam Habib <ghulamhabib.se@gmail.com>
+Date:   Sun Jun 7 02:18:59 2026 +0500
+
+    GodSortaMethod
+
+[33mcommit d28f5f3b8a79d198287506d6edb2f7bdd96670f1[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Fri Apr 10 23:22:36 2026 +0500
+
+    today i solve one codeforces problem
+
+[33mcommit 3d9d64c778066d0c15c4e3e532af59c1981f8042[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Mon Mar 23 20:12:41 2026 +0500
+
+    casmir string :
+
+[33mcommit a55d4e8e7e3e73951ddaf72b411f608e6c7a1642[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Sun Mar 22 01:25:24 2026 +0500
+
+    new solve
+
+[33mcommit 6dff4e3b525689184acdc16d1493a0840a2d140e[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Fri Mar 20 23:51:06 2026 +0500
+
+    solve dproblem
+
+[33mcommit 73878590c3ff24f76ad601b49b26938cf3eaea92[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Tue Mar 17 01:04:11 2026 +0500
+
+    today solve problems
+
+[33mcommit 91ad1df0b9d758ad79a7cb7702e7f434628d6e2b[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Fri Mar 13 02:52:53 2026 +0500
+
+    today solved problems
+
+[33mcommit 798ca3ed806211bbe0f381e805777c2842095a1c[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Thu Mar 12 00:24:51 2026 +0500
+
+    today i solve only signle problem
+
+[33mcommit accb6f3eb92931a96c2720d08c49f9e616714a16[m
+Merge: 12a8a1a cf32927
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Wed Mar 11 01:01:19 2026 +0500
+
+    fix
+
+[33mcommit 12a8a1a67c6b4d3e1411d82394937dbbe8c10419[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Wed Mar 11 00:59:25 2026 +0500
+
+    fixed
+
+[33mcommit 11ebb0192ad2fcaaac72662879b7861406b5bd5e[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Wed Mar 11 00:57:39 2026 +0500
+
+    today i solde new problem on code forces
+
+[33mcommit cf32927f60c98a2bf2ae09e88a761d2b8d03c779[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Mon Mar 9 00:07:47 2026 +0500
+
+    today solved Problem         new file:   gcdLcm.cpp
+            new file:   minStepToMakeb.cpp
+            new file:   newLangAssing.cpp
+            new file:   subliemSequenc.cpp
+            new file:   twoElevator.cpp
+
+[33mcommit 3b51a61cb413ee75ef5f6ffec7d15530a279e40c[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Sun Mar 8 03:22:39 2026 +0500
+
+    today solve
+
+[33mcommit 0d71e959ed7e708fd1580448e443735130e67179[m[33m ([m[1;33mtag: [m[1;33mv.2[m[33m)[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Sat Mar 7 03:29:04 2026 +0500
+
+    today solve
+
+[33mcommit 1735f6375395f25408d8bb49152bb7908fc77f4e[m
+Merge: 779230c 94dbf94
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Fri Mar 6 02:22:58 2026 +0500
+
+    Mertp:q:ge branch 'main' of https://github.com/habibx792/coding
+
+[33mcommit 779230c44038408ecf1e56327cabb7b47f755ebb[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Fri Mar 6 02:22:45 2026 +0500
+
+    today i solve 4 problem one with brute force
+
+[33mcommit 94dbf94e33d1b12b468a2e40d646da6b5d7a74cc[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Thu Mar 5 04:08:23 2026 +0500
+
+    Add problem-solving section for CodeForces and DSA
+
+[33mcommit 92fe30617a10ad4cd140c8addf3f9b64924c2a81[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Thu Mar 5 04:05:49 2026 +0500
+
+    done today
+
+[33mcommit d8614a45ba351593d39d81f7dc6b00eb2f3f5302[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Tue Mar 3 23:49:29 2026 +0500
+
+    A  coins.cpp
+    A  grabCand.cpp
+    A  onlyPulse.cpp
+
+[33mcommit 050a2f1f51bd35818ab3817d7d97e9b1b9a8456b[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Tue Mar 3 00:40:35 2026 +0500
+
+    today solved
+
+[33mcommit c097a4de570aa9e72395b7f3e3aa0bb4273e7977[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Mon Mar 2 01:13:52 2026 +0500
+
+    03/02/2026 01:13:52
+
+[33mcommit 3caea47544d93fc1ad5b1b0b353be5a9414274db[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Mon Mar 2 01:12:37 2026 +0500
+
+    $today
+
+[33mcommit 3539e96d781245f9ba877e16c025bc4c5d6dd541[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Sun Mar 1 02:50:56 2026 +0500
+
+    today solved problem
+
+[33mcommit 7c38964b354a822ef2fb887e801dd7fde955f887[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Sat Feb 28 00:21:45 2026 +0500
+
+     new file:   magicalStick.py
+            new file:   oddSet.py
+            new file:   unitedWeStand.py
+            new file:   yogartSale.py
+
+[33mcommit 60b03431a72bf25ce433b386af89d6ff9755f258[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Fri Feb 27 13:09:24 2026 +0500
+
+    fixe directory structre
+
+[33mcommit 6a0dd83328b897416b46682fa11c7cde8756016e[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Fri Feb 27 13:06:30 2026 +0500
+
+      new file:   collectingCoing.cpp
+            new file:   constructivAlgo/beatMap.cpp
+            new file:   constructivAlgo/grrosshopperJump.py
+            new file:   constructivAlgo/sequenceGame.cpp
+            new file:   htilist/test.cpp/test.cpp
+            new file:   maTeamp.cpp
+            new file:   matrix/strWord_8_8.cpp
+
+[33mcommit 95731b6e691586aaf2fc0ba7540a7d98b0887b66[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Wed Feb 25 04:28:20 2026 +0500
+
+      ../collectingCoing.cpp
+            ../htilist/
+            minRotation.cpp
+            ../maTeamp.cpp
+            ../matrix/
+
+[33mcommit 568b75d0f9673d67d55cd9ab0565397bb49f547a[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Tue Feb 24 00:46:55 2026 +0500
+
+    today solve 3 problem
+
+[33mcommit 3ac3914c1a574bfb4206694431e5e93c22eedcc7[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Mon Feb 23 02:51:13 2026 +0500
+
+    cansquare proble
+
+[33mcommit da9db68f55f9e47777cba4f128e7f565fa80036a[m
+Merge: 4e6e04b 7457cea
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Sun Feb 22 07:19:08 2026 +0500
+
+    t pMerge branch 'main' of https://github.com/habibx792/coding
+
+[33mcommit 4e6e04b87d53abbf587d5a0dfc08dbaee55e198d[m
+Author: Habib <ghulamhabib.x@gmail.com>
+Date:   Sun Feb 22 07:18:55 2026 +0500
+
+        new file:   evenOddGame.cpp
+            new file:   floorNumber.cpp
+            new file:   jaggedSwap.cpp
+            new file:   maxIncrease.cpp
+            new file:   minStepToDesort.cpp
+            new file:   singePular.cpp
+            new file:   square.py
+            new file:   triple.cpp
+
+[33mcommit 7457cead30b301f8d15534c156a90d77eee6e481[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Wed Feb 18 22:16:33 2026 +0500
+
+    done
+
+[33mcommit 5e1b41ffb30e9509848a1ad0535df670750c2b12[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Wed Feb 18 22:15:17 2026 +0500
+
+    done
+
+[33mcommit 27c032c7c4d1aacaa503e4be4f0151f062cf8aea[m
+Author: Ghulam Habib <ghulamhabib.xgmail.com>
+Date:   Wed Feb 18 22:13:52 2026 +0500
+
+    added new file for next day code
+
+[33mcommit 2a31b0c3eca5a646f9d21634cf450439fe5692fa[m
+Author: Ghulam Habib <ghlamhabib.x@gmail.com>
+Date:   Wed Feb 18 22:10:57 2026 +0500
+
+    today solve
+
+[33mcommit 8967a573d6bf275a8d6875d64d2c198785103507[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Tue Feb 17 02:07:04 2026 +0500
+
+    day 10 solve tow
+
+[33mcommit 4f8f752c934f5a7208f27a9dd19e07e4322eb601[m
+Merge: 0c14361 f03652d
+Author: Habib <ghulamhabib161@gmail.com>
+Date:   Sun Feb 15 04:29:45 2026 +0500
+
+    Merge branch 'main' of https://github.com/habibx792/coding
+
+[33mcommit 0c14361771695b722c5d0c746e905ba4c5413747[m
+Author: Habib <ghulamhabib161@gmail.com>
+Date:   Sun Feb 15 04:29:32 2026 +0500
+
+    oslve  3 problem
+
+[33mcommit f03652da3115605b0dcf261d54954aecdc4bbefd[m
+Author: ghulamhabib364 <ghulamhabib.x@gmail.com>
+Date:   Fri Feb 13 00:09:58 2026 +0500
+
+    sleep and ucp takra
+
+[33mcommit 2fd64f45917ec84cae8a7ac36a1a64bf0f338c7c[m
+Author: ghulamhabib364 <ghulamhabib.x@gmail.com>
+Date:   Thu Feb 12 00:10:35 2026 +0500
+
+    today solve problems
+
+[33mcommit 73504b4d867acc52823f12c9790984f1c20f18f7[m
+Author: ghulamhabib364 <ghulamhabib.x@gmail.com>
+Date:   Wed Feb 11 17:35:20 2026 +0500
+
+    today problem
+
+[33mcommit 6e38848c209da78ff2ef7d766f0fbdf515913d20[m
+Author: ghulamhabib364 <ghulamhabib.x@gmail.com>
+Date:   Tue Feb 10 23:30:50 2026 +0500
+
+    done
+
+[33mcommit a7249d6d195ed59e418cbdc3b779611d80455b09[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Tue Feb 10 00:59:38 2026 +0500
+
+    solve 2 problems
+
+[33mcommit 86088d445459f4f5012314d55f8f41332dc6f14e[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Mon Feb 9 01:46:03 2026 +0500
+
+    next day
+
+[33mcommit 068cb44868fe58840ce9e0685e0976304ca7e0c2[m
+Merge: 27d29b0 952c47c
+Author: Ghulam Habib <ghulamhabib.x@gamil.com>
+Date:   Sun Feb 8 01:57:04 2026 +0500
+
+    resolve
+
+[33mcommit 27d29b0edfa0850cbcfb8956118d93b83b2d1b79[m
+Author: Ghulam Habib <ghulamhabib.x@gamil.com>
+Date:   Sun Feb 8 01:56:23 2026 +0500
+
+    done
+
+[33mcommit 952c47cf7a924ca810dac01d37d31e0e0852566f[m
+Author: Ghulam Habib <ghulamhabib.x@gamil.com>
+Date:   Sun Feb 8 01:55:07 2026 +0500
+
+     fix
+
+[33mcommit 0684d1f5858a2a876a73f9eb3429e93d02c5c914[m
+Author: Ghulam Habib <ghulamhabib.x@gamil.com>
+Date:   Sun Feb 8 01:47:49 2026 +0500
+
+    not solve any problem day==null==true
+
+[33mcommit 90b06148c904783b025c59502835a9fbdf996195[m
+Author: Ghulam Habib <ghulamhabib.x@gamil.com>
+Date:   Fri Feb 6 00:44:34 2026 +0500
+
+    3 problems on codeforces
+
+[33mcommit 3b6c4031b14053f2ba110a1178f1d8cdf8ce2b29[m
+Author: Ghulam Habib <ghulamhabib.x@gamil.com>
+Date:   Thu Feb 5 23:46:00 2026 +0500
+
+    miska probleM
+
+[33mcommit 7b861156e006f636288b2535e7623c3d93058108[m
+Author: Saim Rasool <saimrasool349@gmail.com>
+Date:   Wed Feb 4 01:20:46 2026 +0500
+
+    new file:   chosingTeam.cpp
+            new file:   compositNumber.cpp
+            new file:   loveStory.cpp
+            new file:   shortSort.cpp
+
+[33mcommit 5086f72af823ae566e398711afcf47002ad0ecc4[m
+Author: Saim Rasool <saimrasool349@gmail.com>
+Date:   Tue Feb 3 00:40:12 2026 +0500
+
+         PrepeenAppend.cpp
+            creatingWord.cpp
+            dislike.cpp
+            minimize.cpp
+
+[33mcommit 313c748b1ff78c4aa8fd78f01a7f5d2745e20a4c[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Mon Feb 2 01:58:58 2026 +0500
+
+    find median
+
+[33mcommit 66d17fdc17f06c0679ff7446b1009f755b74ecbc[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Sun Feb 1 00:21:22 2026 +0500
+
+    today i sole simple probme::
+
+[33mcommit fe4df7af0ecc4645fd8abd58208162f7e1025658[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Sat Jan 31 03:44:06 2026 +0500
+
+         new file:   A+bAgain.cpp
+            new file:   division.cpp
+            new file:   integerGame.cpp
+            new file:   lucky.cpp
+            new file:   marathon.cpp
+            new file:   plusMinus.cpp
+            new file:   restorring.cpp
+            new file:   vasyHipster.cpp
+            new file:   yetAnothteTwo.cpp
+
+[33mcommit 5dd69f89d4e1025dbe725265478e8d4ecd409843[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Fri Jan 30 02:03:18 2026 +0500
+
+    seraj and dima Problem score probleM
+
+[33mcommit 3cea3884fddd48489e02942e430cad94fe22a685[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Thu Jan 29 19:40:51 2026 +0500
+
+    new code year
+
+[33mcommit 222d05d9d7d46c9fdc7b96bf78f16d3ce9fff806[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Wed Jan 28 23:51:53 2026 +0500
+
+         new file:   againTwentyFIve.cpp
+            new file:   burle.cpp
+            new file:   newYearAndHurry.cpp
+            new file:   vasyaProblem.cpp
+
+[33mcommit 4d19e51d5ed461a90c904588ceb63ea7e86dae01[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Wed Jan 28 00:44:58 2026 +0500
+
+        new file:   AmusingJoke.cpp
+            new file:   crimeCount.cpp
+            new file:   id
+            new file:   meetingFriend.cpp
+            new file:   softDrinkProblem.cpp
+            new file:   yesProblem.cpp
+
+[33mcommit 474c69234cea893697b81346e4f05e6dd144bdb1[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Tue Jan 27 01:51:10 2026 +0500
+
+    new file:   noOfWays.cpp
+            new file:   printAllSubArray.cpp
+            new file:   sumProble2.cpp
+            new file:   sumRoundProblem.cpp
+
+[33mcommit 11d7f1d406095447978c716347bd418aec769aed[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Mon Jan 26 00:19:11 2026 +0500
+
+    anter and problems
+
+[33mcommit 05087e625dbca07dafc65c3205470d35ec75c06e[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Sun Jan 25 01:20:36 2026 +0500
+
+    dragon count ,general arival,hit lottery
+
+[33mcommit 291222d311bc2a59e02863705fb6b3ac49a7aabe[m[33m ([m[1;33mtag: [m[1;33mv3.4[m[33m, [m[1;33mtag: [m[1;33mv3.0[m[33m)[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Sat Jan 24 04:04:01 2026 +0500
+
+    hulk feeling ,i want be guy ,pangram and diviisblity problem
+
+[33mcommit ffb8530f400532c26c097e91ebb51781d54226cb[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Fri Jan 23 01:25:12 2026 +0500
+
+    dring ,hoursshoes nad magnet and ultraFasthmath
+
+[33mcommit 21d7f4a75b758cf14e0e17639a23d28df76d48d9[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Thu Jan 22 01:12:01 2026 +0500
+
+    two prolmen caluclting function and georgeAccounmation proble on code forces
+
+[33mcommit aafc9affab42c7b30d64a5c2f3fbf7ca9049bb46[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Wed Jan 21 00:50:48 2026 +0500
+
+    done
+
+[33mcommit 4365f578b642c77d1b99aeeebf9434fb5d5ad5c0[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Wed Jan 21 00:45:54 2026 +0500
+
+    detelte all exe
+
+[33mcommit c8ed7179cb8951957b073a9768ec8159daa5970b[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Wed Jan 21 00:39:41 2026 +0500
+
+    Remove executables from repository
+
+[33mcommit 0eb733ff2c6ef91eaaa158f0655430c5ebd141b9[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Wed Jan 21 00:38:03 2026 +0500
+
+    don
+
+[33mcommit 715de95d6d8d9f3b8f404d1041e1d65466ef6e31[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Wed Jan 21 00:37:23 2026 +0500
+
+    Remove executables and update .gitignore
+
+[33mcommit 810f429348bcea6eb1c5ca1e732a993a84b390b1[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Wed Jan 21 00:30:12 2026 +0500
+
+    two problem from codeForces ->atram and in search of easyProblem
+
+[33mcommit 0e142eda213e82fad75144e8d94c7a02f49a5b6d[m
+Author: Ghulam Habib <ghulamhabib.x@gmail.com>
+Date:   Tue Jan 20 21:57:44 2026 +0500
+
+    Initial commit: C++ practice problems

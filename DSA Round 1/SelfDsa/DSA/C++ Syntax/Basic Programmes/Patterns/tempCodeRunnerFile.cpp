@@ -1,0 +1,1 @@
+cout<<"Stage 1";

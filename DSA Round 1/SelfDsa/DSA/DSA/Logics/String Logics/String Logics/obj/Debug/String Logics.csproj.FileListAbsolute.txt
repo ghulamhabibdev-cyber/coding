@@ -1,0 +1,7 @@
+F:\logic building series\String Logics\String Logics\bin\Debug\String Logics.exe.config
+F:\logic building series\String Logics\String Logics\bin\Debug\String Logics.exe
+F:\logic building series\String Logics\String Logics\bin\Debug\String Logics.pdb
+F:\logic building series\String Logics\String Logics\obj\Debug\String Logics.csprojResolveAssemblyReference.cache
+F:\logic building series\String Logics\String Logics\obj\Debug\String Logics.csproj.CoreCompileInputs.cache
+F:\logic building series\String Logics\String Logics\obj\Debug\String Logics.exe
+F:\logic building series\String Logics\String Logics\obj\Debug\String Logics.pdb

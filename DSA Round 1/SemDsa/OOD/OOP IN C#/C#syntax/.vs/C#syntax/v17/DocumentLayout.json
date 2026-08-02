@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Programming\\Data_Structure_And_Algorytms\\SemDsa\\OOD\\OOP IN C#\\C#syntax\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{67C8C978-055B-4343-BDAB-1CC8253939D1}|ConsoleApp1\\ConsoleApp1.csproj|d:\\programming\\data_structure_and_algorytms\\semdsa\\ood\\oop in c#\\c#syntax\\consoleapp1\\derive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67C8C978-055B-4343-BDAB-1CC8253939D1}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\derive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67C8C978-055B-4343-BDAB-1CC8253939D1}|ConsoleApp1\\ConsoleApp1.csproj|d:\\programming\\data_structure_and_algorytms\\semdsa\\ood\\oop in c#\\c#syntax\\consoleapp1\\abs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67C8C978-055B-4343-BDAB-1CC8253939D1}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\abs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67C8C978-055B-4343-BDAB-1CC8253939D1}|ConsoleApp1\\ConsoleApp1.csproj|d:\\programming\\data_structure_and_algorytms\\semdsa\\ood\\oop in c#\\c#syntax\\consoleapp1\\dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67C8C978-055B-4343-BDAB-1CC8253939D1}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67C8C978-055B-4343-BDAB-1CC8253939D1}|ConsoleApp1\\ConsoleApp1.csproj|d:\\programming\\data_structure_and_algorytms\\semdsa\\ood\\oop in c#\\c#syntax\\consoleapp1\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67C8C978-055B-4343-BDAB-1CC8253939D1}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67C8C978-055B-4343-BDAB-1CC8253939D1}|ConsoleApp1\\ConsoleApp1.csproj|d:\\programming\\data_structure_and_algorytms\\semdsa\\ood\\oop in c#\\c#syntax\\consoleapp1\\human.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67C8C978-055B-4343-BDAB-1CC8253939D1}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\human.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67C8C978-055B-4343-BDAB-1CC8253939D1}|ConsoleApp1\\ConsoleApp1.csproj|d:\\programming\\data_structure_and_algorytms\\semdsa\\ood\\oop in c#\\c#syntax\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67C8C978-055B-4343-BDAB-1CC8253939D1}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67C8C978-055B-4343-BDAB-1CC8253939D1}|ConsoleApp1\\ConsoleApp1.csproj|d:\\programming\\data_structure_and_algorytms\\semdsa\\ood\\oop in c#\\c#syntax\\consoleapp1\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67C8C978-055B-4343-BDAB-1CC8253939D1}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "derive.cs",
+              "DocumentMoniker": "D:\\Programming\\Data_Structure_And_Algorytms\\SemDsa\\OOD\\OOP IN C#\\C#syntax\\ConsoleApp1\\derive.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\derive.cs",
+              "ToolTip": "D:\\Programming\\Data_Structure_And_Algorytms\\SemDsa\\OOD\\OOP IN C#\\C#syntax\\ConsoleApp1\\derive.cs",
+              "RelativeToolTip": "ConsoleApp1\\derive.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T20:46:42.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "abs.cs",
+              "DocumentMoniker": "D:\\Programming\\Data_Structure_And_Algorytms\\SemDsa\\OOD\\OOP IN C#\\C#syntax\\ConsoleApp1\\abs.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\abs.cs",
+              "ToolTip": "D:\\Programming\\Data_Structure_And_Algorytms\\SemDsa\\OOD\\OOP IN C#\\C#syntax\\ConsoleApp1\\abs.cs",
+              "RelativeToolTip": "ConsoleApp1\\abs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T20:43:34.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dog.cs",
+              "DocumentMoniker": "D:\\Programming\\Data_Structure_And_Algorytms\\SemDsa\\OOD\\OOP IN C#\\C#syntax\\ConsoleApp1\\Dog.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Dog.cs",
+              "ToolTip": "D:\\Programming\\Data_Structure_And_Algorytms\\SemDsa\\OOD\\OOP IN C#\\C#syntax\\ConsoleApp1\\Dog.cs",
+              "RelativeToolTip": "ConsoleApp1\\Dog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T20:41:08.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "animal.cs",
+              "DocumentMoniker": "D:\\Programming\\Data_Structure_And_Algorytms\\SemDsa\\OOD\\OOP IN C#\\C#syntax\\ConsoleApp1\\animal.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\animal.cs",
+              "ToolTip": "D:\\Programming\\Data_Structure_And_Algorytms\\SemDsa\\OOD\\OOP IN C#\\C#syntax\\ConsoleApp1\\animal.cs",
+              "RelativeToolTip": "ConsoleApp1\\animal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T20:38:34.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Programming\\Data_Structure_And_Algorytms\\SemDsa\\OOD\\OOP IN C#\\C#syntax\\ConsoleApp1\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
+              "ToolTip": "D:\\Programming\\Data_Structure_And_Algorytms\\SemDsa\\OOD\\OOP IN C#\\C#syntax\\ConsoleApp1\\Program.cs",
+              "RelativeToolTip": "ConsoleApp1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T20:31:26.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "human.cs",
+              "DocumentMoniker": "D:\\Programming\\Data_Structure_And_Algorytms\\SemDsa\\OOD\\OOP IN C#\\C#syntax\\ConsoleApp1\\human.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\human.cs",
+              "ToolTip": "D:\\Programming\\Data_Structure_And_Algorytms\\SemDsa\\OOD\\OOP IN C#\\C#syntax\\ConsoleApp1\\human.cs",
+              "RelativeToolTip": "ConsoleApp1\\human.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T20:25:58.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "person.cs",
+              "DocumentMoniker": "D:\\Programming\\Data_Structure_And_Algorytms\\SemDsa\\OOD\\OOP IN C#\\C#syntax\\ConsoleApp1\\person.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\person.cs",
+              "ToolTip": "D:\\Programming\\Data_Structure_And_Algorytms\\SemDsa\\OOD\\OOP IN C#\\C#syntax\\ConsoleApp1\\person.cs",
+              "RelativeToolTip": "ConsoleApp1\\person.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T20:09:03.796Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+Data Structures COC - 2073
+Lab Plan – 8
+(Binary Search Tree)
+Exercise-1:
+Following is the declaration of TreeNode class and its member functions. Write the code to
+implement the definitions of these member functions.
+
+Exercise-2:
+Following is the declaration of Traversal functions. Write the code to implement the definitions
+of these functions.
+void InsertNode(TreeNode* root, int* info);
+void PreOrder(TreeNode* treeNode);
+void InOrder(TreeNode* treeNode);
+void PostOrder(TreeNode* treeNode);
+Exercise-3:
+Write appropriate main function to test the working of the above code.

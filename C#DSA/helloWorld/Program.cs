@@ -19,7 +19,7 @@ public class Solution
         return -1;
     }
 }
-public class HelloWorld
+public class Program
 {
     public static void Print<T>(T val)
     {

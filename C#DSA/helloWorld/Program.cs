@@ -35,12 +35,21 @@ public class Program
     public static void Main(string[] args)
     {
         Solution s = new Solution();
-        List<int> arr = new List<int>() { 1, 2, 3, 4 };
-        int index = s.LinearSearch(arr, 2);
-        if (index != -1)
-        {
+        // List<int> arr = new List<int>() { 1, 2, 3, 4 };
+        // int index = s.LinearSearch(arr, 2);
+        // if (index != -1)
+        // {
 
-            Print<string>("Number is Prenset : " + arr[index]);
+        //     Print<string>("Number is Prenset : " + arr[index]);
+        // }
+        MyHasher myHasher=new MyHasher();
+        var resHash=myHasher.HashString("HelloWorld");
+        System.Console.WriteLine(resHash);
+        if(myHasher.VerifyHash("HelloWorld",resHash))
+        {
+            System.Console.WriteLine("Its Working ");
         }
+
+
     }
 }

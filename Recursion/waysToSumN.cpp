@@ -1,37 +1,39 @@
 #include <iostream>
 #include <vector>
-#include <unordered_map>
-#include <map>
-#include <queue>
-#include <stack>
-#include <algorithm>
-#include <limits>
-#include <list>
 using namespace std;
-
-class A
+class Solution
 {
+public:
+    void waysToSum(int &count, vector<int> &arr, int sum, int t, int index)
+    {
+        if (sum == t)
+        {
+            count++;
+            return;
+        }
+        if (sum > t || index >= arr.size())
+        {
+            return;
+        }
+        sum += arr[index];
+        waysToSum(count, arr, sum, t, index);
+        sum -= arr[index];
+        waysToSum(count, arr, sum, t, index + 1);
+    }
+    int count(vector<int> &coins, int sum)
+    {
+        // code here.
+        int count = 0;
+        waysToSum(count, coins, 0, sum, 0);
+        return count;
+    }
 };
-void waysToSum(int &count, vector<int> &arr, int sum, int t, int index)
-{
-    if (sum == t)
-    {
-        count++;
-        return;
-    }
-    if (sum > t || index >= arr.size())
-    {
-        return;
-    }
-    sum += arr[index];
-    waysToSum(count, arr,  sum, t, index);
-    sum -= arr[index];
-    waysToSum(count, arr,sum, t, index + 1);
-}
 int main()
 {
+    Solution s;
     vector<int> arr = {1, 5, 6};
-    int count = 0;
-    waysToSum(count, arr, 0, 7, 0);
-    cout << "Ways : " << count << endl;
+    int sum = 7;
+    int ans = s.count(arr, sum);
+    cout << "Ways : " << ans << endl;
+    return 0;
 }

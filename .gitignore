@@ -1,2 +1,23 @@
+## Visual Studio Build Outputs
+bin/
+obj/
 *.exe
-aaaa.cpp
+*.dll
+*.pdb
+
+## Rosetta / CoreCLR / Native outputs
+*.runtimeconfig.json
+*.deps.json
+
+## Rider / Visual Studio Code / IDE folders
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
